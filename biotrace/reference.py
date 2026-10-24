@@ -81,7 +81,7 @@ class Reference:
 
     # ---- sekuens referensi ---------------------------------------------------
     def hit(self, accession: str) -> dict:
-        acc = accession.split("|")[-1].split(".")[0]
+        acc = accession.split(".")[0]
         if acc not in self.taxonomy.index:
             return {"aksesi": acc, "spesies": "", "spesies_kunci": "", "genus": "", "famili": "",
                     "terselesaikan": False, "tervalidasi": False, "tercatat_di_indonesia": "belum dicek"}

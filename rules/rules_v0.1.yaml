@@ -15,7 +15,9 @@ reference:
   completeness_scope: "wilayah"
 
 blast:
-  max_target_seqs: 50
+  # rencana menyebut 50; dinaikkan karena satu spesies bisa punya >50 sekuens identik
+  # (Cyprinus carpio: 85) sehingga kecocokan setara dari spesies lain terpotong
+  max_target_seqs: 500
   perc_identity: 80
   qcov_hsp_perc: 80
   outfmt: "6 qseqid sseqid pident length qcovs evalue bitscore"
