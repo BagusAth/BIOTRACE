@@ -1,0 +1,8 @@
+# Akhir baris LF di semua platform supaya SHA-256 berkas referensi dan aturan sama
+# di setiap checkout (sidik jari laporan bergantung padanya).
+* text=auto eol=lf
+*.qza binary
+*.gz binary
+*.zip binary
+*.pdf binary
+*.png binary

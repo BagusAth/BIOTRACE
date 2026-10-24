@@ -1,0 +1,10 @@
+nama_induk,nama_alias,tingkat,sumber,catatan
+Amphilophus citrinellus,louhan hibrida,spesies,Audit Dataset; literatur taksonomi louhan,induk louhan; ditinjau ahli
+Amphilophus labiatus,louhan hibrida,spesies,Audit Dataset; literatur taksonomi louhan,induk louhan; ditinjau ahli
+Amphilophus trimaculatus,louhan hibrida,spesies,Audit Dataset; literatur taksonomi louhan,= Cichlasoma trimaculatum; belum ada sekuens 12S
+Cichlasoma trimaculatum,louhan hibrida,spesies,Audit Dataset; literatur taksonomi louhan,induk yang sering disebut; belum ada sekuens 12S
+Paraneetroplus synspilus,louhan hibrida,spesies,Audit Dataset; literatur taksonomi louhan,induk louhan
+Vieja melanura,louhan hibrida,spesies,literatur taksonomi louhan,sinonim senior Paraneetroplus synspilus (Vieja synspila); perlu tinjauan ahli
+Amphilophus,louhan hibrida,genus,Audit Dataset,genus induk louhan
+Paraneetroplus,louhan hibrida,genus,Audit Dataset,genus induk louhan
+Cichlasoma,louhan hibrida,genus,Audit Dataset,genus luas; induk louhan dulu digolongkan ke Cichlasoma sensu lato

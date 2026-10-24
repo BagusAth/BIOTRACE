@@ -1,0 +1,23 @@
+nama: ref12S
+version: v0.1
+jenis: indonesia
+wilayah: Kompleks Malili
+danau:
+- Matano
+- Mahalona
+- Towuti
+marker: 12S rRNA
+blast_db: ref12S
+aturan_validasi: specimen_voucher GenBank
+dibuat: '2026-10-24'
+kandidat: biotrace_ref_malili_v0.1.zip
+sumber:
+- mitohelper 12S Juli 2026 (Lim & Thompson 2021)
+- NCBI GenBank esummary
+- GBIF species API
+- IUCN Red List lewat GBIF
+- Kottelat 1990, 1991
+- Herder dkk. 2006
+- Hedianto & Sentosa 2019
+- Mongabay 2018
+catatan: checklist sementara; perlu tinjauan ahli

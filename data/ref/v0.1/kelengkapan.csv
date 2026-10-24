@@ -1,0 +1,42 @@
+wilayah,genus,n_checklist,r_tervalidasi,n_ada_sekuens,p_belum_di_kamus,spesies_tanpa_referensi
+Kompleks Malili,Anguilla,2,1,1,0.5,Anguilla celebesensis
+Kompleks Malili,Channa,1,1,1,0.0,
+Kompleks Malili,Clarias,1,1,1,0.0,
+Kompleks Malili,Colossoma,1,1,1,0.0,
+Kompleks Malili,Cyprinus,1,1,1,0.0,
+Kompleks Malili,Glossogobius,1,0,0,1.0,Glossogobius matanensis
+Kompleks Malili,Mugilogobius,1,0,0,1.0,Mugilogobius adeia
+Kompleks Malili,Nomorhamphus,1,0,0,1.0,Nomorhamphus weberi
+Kompleks Malili,Oreochromis,1,1,1,0.0,
+Kompleks Malili,Oryzias,1,0,0,1.0,Oryzias matanensis
+Kompleks Malili,Paratherina,4,0,0,1.0,Paratherina cyanea; Paratherina labiosa; Paratherina striata; Paratherina wolterecki
+Kompleks Malili,Pterygoplichthys,1,1,1,0.0,
+Kompleks Malili,Telmatherina,9,0,1,1.0,Telmatherina abendanoni; Telmatherina antoniae; Telmatherina bonti; Telmatherina celebensis; Telmatherina obscura; Telmatherina opudi; Telmatherina prognatha; Telmatherina sarasinorum; Telmatherina wahjui
+Kompleks Malili,Tominanga,2,0,0,1.0,Tominanga aurea; Tominanga sanguicauda
+Matano,Anguilla,2,1,1,0.5,Anguilla celebesensis
+Matano,Channa,1,1,1,0.0,
+Matano,Clarias,1,1,1,0.0,
+Matano,Colossoma,1,1,1,0.0,
+Matano,Cyprinus,1,1,1,0.0,
+Matano,Glossogobius,1,0,0,1.0,Glossogobius matanensis
+Matano,Mugilogobius,1,0,0,1.0,Mugilogobius adeia
+Matano,Nomorhamphus,1,0,0,1.0,Nomorhamphus weberi
+Matano,Oreochromis,1,1,1,0.0,
+Matano,Oryzias,1,0,0,1.0,Oryzias matanensis
+Matano,Pterygoplichthys,1,1,1,0.0,
+Matano,Telmatherina,6,0,0,1.0,Telmatherina antoniae; Telmatherina obscura; Telmatherina opudi; Telmatherina prognatha; Telmatherina sarasinorum; Telmatherina wahjui
+Mahalona,Anguilla,2,1,1,0.5,Anguilla celebesensis
+Mahalona,Clarias,1,1,1,0.0,
+Mahalona,Colossoma,1,1,1,0.0,
+Mahalona,Oreochromis,1,1,1,0.0,
+Mahalona,Paratherina,1,0,0,1.0,Paratherina wolterecki
+Mahalona,Pterygoplichthys,1,1,1,0.0,
+Mahalona,Telmatherina,1,0,1,1.0,Telmatherina celebensis
+Towuti,Anguilla,2,1,1,0.5,Anguilla celebesensis
+Towuti,Clarias,1,1,1,0.0,
+Towuti,Colossoma,1,1,1,0.0,
+Towuti,Oreochromis,1,1,1,0.0,
+Towuti,Paratherina,4,0,0,1.0,Paratherina cyanea; Paratherina labiosa; Paratherina striata; Paratherina wolterecki
+Towuti,Pterygoplichthys,1,1,1,0.0,
+Towuti,Telmatherina,3,0,1,1.0,Telmatherina abendanoni; Telmatherina bonti; Telmatherina celebensis
+Towuti,Tominanga,2,0,0,1.0,Tominanga aurea; Tominanga sanguicauda

@@ -1,0 +1,33 @@
+spesies,famili,danau,status,sumber,tahun,catatan
+Telmatherina antoniae,Telmatherinidae,Matano,endemik,Kottelat 1991; Herder dkk. 2006; FEOW 750,1991,checklist sementara; perlu tinjauan ahli
+Telmatherina obscura,Telmatherinidae,Matano,endemik,Kottelat 1991; Herder dkk. 2006; FEOW 750,1991,checklist sementara; perlu tinjauan ahli
+Telmatherina opudi,Telmatherinidae,Matano,endemik,Kottelat 1991; Herder dkk. 2006; FEOW 750,1991,checklist sementara; perlu tinjauan ahli
+Telmatherina prognatha,Telmatherinidae,Matano,endemik,Kottelat 1991; Herder dkk. 2006; FEOW 750,1991,checklist sementara; perlu tinjauan ahli
+Telmatherina sarasinorum,Telmatherinidae,Matano,endemik,Kottelat 1991; Herder dkk. 2006; FEOW 750,1991,checklist sementara; perlu tinjauan ahli
+Telmatherina wahjui,Telmatherinidae,Matano,endemik,Kottelat 1991; Herder dkk. 2006; FEOW 750,1991,checklist sementara; perlu tinjauan ahli
+Telmatherina abendanoni,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Telmatherina bonti,Telmatherinidae,Towuti,endemik,Weber & de Beaufort 1922; Herder dkk. 2006; FEOW 750,2006,checklist sementara; perlu tinjauan ahli
+Telmatherina celebensis,Telmatherinidae,Towuti,endemik,Boulenger 1897; Herder dkk. 2006; FEOW 750,2006,checklist sementara; perlu tinjauan ahli
+Telmatherina celebensis,Telmatherinidae,Mahalona,endemik,Herder dkk. 2006; FEOW 750,2006,checklist sementara; perlu tinjauan ahli
+Paratherina cyanea,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Paratherina labiosa,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Paratherina striata,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Paratherina wolterecki,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Paratherina wolterecki,Telmatherinidae,Mahalona,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Tominanga aurea,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Tominanga sanguicauda,Telmatherinidae,Towuti,endemik,Kottelat 1990; Herder dkk. 2006; FEOW 750,1990,checklist sementara; perlu tinjauan ahli
+Oryzias matanensis,Adrianichthyidae,Matano,endemik,Ringkasan ensiklopedia Danau Matano; Hedianto & Sentosa 2019,2019,endemik Matano non-telmatherinid
+Nomorhamphus weberi,Zenarchopteridae,Matano,endemik,Ringkasan ensiklopedia Danau Matano; Hedianto & Sentosa 2019,2019,endemik Matano non-telmatherinid
+Glossogobius matanensis,Gobiidae,Matano,endemik,Ringkasan ensiklopedia Danau Matano; Hedianto & Sentosa 2019,2019,endemik Matano non-telmatherinid
+Mugilogobius adeia,Gobiidae,Matano,endemik,Ringkasan ensiklopedia Danau Matano; Hedianto & Sentosa 2019,2019,endemik Matano non-telmatherinid
+louhan hibrida,Cichlidae,Matano,introduksi,Hedianto & Sentosa 2019 (survei 2015-2016),2019,louhan 53.62% komunitas ikan Matano; induk lewat alias.csv
+Oreochromis niloticus,Cichlidae,Matano,introduksi,Hedianto & Sentosa 2019 (survei 2015-2016),2019,nila
+Channa striata,Channidae,Matano,introduksi,Hedianto & Sentosa 2019 (survei 2015-2016),2019,gabus; asli Indonesia bagian barat
+Cyprinus carpio,Cyprinidae,Matano,introduksi,Hedianto & Sentosa 2019 (survei 2015-2016),2019,karper
+louhan hibrida,Cichlidae,Kompleks Malili,introduksi,Mongabay 2018 (studi 2013),2018,14 spesies asing di danau-danau Malili
+Oreochromis niloticus,Cichlidae,Kompleks Malili,introduksi,Mongabay 2018 (studi 2013),2018,nila
+Clarias gariepinus,Clariidae,Kompleks Malili,introduksi,Mongabay 2018 (studi 2013),2018,lele dumbo
+Colossoma macropomum,Serrasalmidae,Kompleks Malili,introduksi,Mongabay 2018 (studi 2013),2018,bawal; spesies bawal perlu konfirmasi (Colossoma atau Piaractus)
+Pterygoplichthys pardalis,Loricariidae,Kompleks Malili,introduksi,Mongabay 2018 (studi 2013); Bisnis.com 2025,2018,sapu-sapu; merusak jaring nelayan
+Anguilla marmorata,Anguillidae,Kompleks Malili,asli,FishBase sebaran Sulawesi (Sungai Larona),2024,diadromus; perlu tinjauan ahli
+Anguilla celebesensis,Anguillidae,Kompleks Malili,asli,FishBase sebaran Sulawesi (Sungai Larona),2024,diadromus; perlu tinjauan ahli
