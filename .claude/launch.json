@@ -6,6 +6,12 @@
       "runtimeExecutable": "D:/UNDIP/BIOTRACE/.venv/Scripts/python.exe",
       "runtimeArgs": ["-m", "streamlit", "run", "app.py", "--server.headless", "true", "--server.port", "8501"],
       "port": 8501
+    },
+    {
+      "name": "biotrace-dashboard-static",
+      "runtimeExecutable": "D:/UNDIP/BIOTRACE/.venv/Scripts/python.exe",
+      "runtimeArgs": ["-m", "http.server", "3001", "--directory", "web/out"],
+      "port": 3001
     }
   ]
 }

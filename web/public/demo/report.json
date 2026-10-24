@@ -1,0 +1,1755 @@
+{
+  "schema": "biotrace.report.v1",
+  "meta": {
+    "proyek": "Pemantauan Danau Matano",
+    "judul": "Danau Matano, MTN-ST1, MTN-ST2, MTN-ST3",
+    "simulasi": true,
+    "mode": "proyek",
+    "marker": [
+      "12S MiFish-U"
+    ],
+    "jumlah_stasiun": 3,
+    "replikat_per_stasiun": "3",
+    "jumlah_sampel": 9,
+    "jumlah_kontrol": 3,
+    "jumlah_klaim": 15,
+    "jumlah_asv": 10,
+    "diproses": "2026-10-24T22:39:58+07:00",
+    "durasi_detik": 3.06,
+    "referensi": {
+      "label": "ref12S v0.1 (sha256:b69a0501737be614bfd1efd512aa7b542404ebb89039e2e953887b1654353ab2)",
+      "nama": "ref12S",
+      "versi": "v0.1",
+      "jenis": "indonesia",
+      "wilayah": "Kompleks Malili"
+    },
+    "aturan": {
+      "versi": "0.1",
+      "label": "rules_v0.1.yaml (sha256:6149124510366b4538419438514ec35c9891bb75b74034d1bc10cda990582195)"
+    },
+    "aplikasi": "biotrace 0.2.0",
+    "sidik_jari": "sha256:10325c7c8571accc4fa8af7edd2fdd586ee209eb52005db1579fe5643eb4dd39",
+    "kalibrasi_galat": "data/test/results/galat_per_nilai.csv (sha256:a166a0ecc9eb1d3b37aa569df71a61fdac408718fa24b6bb30d4945623b35d24)",
+    "batas_interpretasi": {
+      "id": "Deteksi DNA bukan bukti pasti ikan hidup di lokasi.",
+      "en": "DNA detection is not definitive proof that the fish lives at the site."
+    }
+  },
+  "ringkasan": {
+    "kalimat": "Dari 15 klaim, 8 aman dilaporkan, 1 dengan catatan, 5 wajib verifikasi, 1 jangan dipakai; 1 tidak dikenal.",
+    "jumlah": {
+      "n": 15,
+      "aman dilaporkan": 8,
+      "dengan catatan": 1,
+      "wajib verifikasi": 5,
+      "jangan dipakai": 1,
+      "tidak dikenal": 1
+    },
+    "tindak_lanjut": {
+      "aman dilaporkan": "Masukkan ke laporan pada tingkat nama yang tercantum.",
+      "dengan catatan": "Tulis di tingkat yang aman (genus atau tidak dikenal) dan cek kemungkinan sumber DNA lain.",
+      "wajib verifikasi": "Jadwalkan verifikasi: marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher.",
+      "jangan dipakai": "Keluarkan dari laporan; tinjau batch ekstraksi dan ulang PCR bila perlu."
+    },
+    "tidak_dikenal_ke_barcode": 1
+  },
+  "penyebab": [
+    {
+      "kode": "referensi",
+      "label": "Referensi",
+      "petunjuk": "kerabat belum ada di kamus",
+      "jumlah": 6
+    },
+    {
+      "kode": "marker",
+      "label": "Marker",
+      "petunjuk": "spesies tak terbedakan di 12S",
+      "jumlah": 7
+    },
+    {
+      "kode": "sampel",
+      "label": "Sampel",
+      "petunjuk": "kontrol, replikat, bacaan sedikit",
+      "jumlah": 2
+    },
+    {
+      "kode": "lokasi",
+      "label": "Lokasi",
+      "petunjuk": "tidak tercatat di perairan ini",
+      "jumlah": 1
+    }
+  ],
+  "berkas": [
+    {
+      "nama": "bacaan.csv",
+      "peran": "bacaan",
+      "deskripsi": "tabel bacaan, format panjang, 10 ASV × 10 sampel",
+      "sha256": "8fd7e8c2757d51c02373b770ab51e0dd6fd7d6848d90835b407db8dc1f9f66dd"
+    },
+    {
+      "nama": "taksonomi.csv",
+      "peran": "taksonomi",
+      "deskripsi": "taksonomi dari lab, 10 ASV",
+      "sha256": "d952122e83da538a0197f2ba5cc0eac8b60609fb0f41e19c7e1166d889cb0488"
+    },
+    {
+      "nama": "metadata.csv",
+      "peran": "metadata",
+      "deskripsi": "9 sampel, 3 kontrol negatif",
+      "sha256": "c265622d71e7cb4c4c63e9e7fdc95598cd4e82189db59daf95a1c3ea7c104acc"
+    },
+    {
+      "nama": "asv.fasta",
+      "peran": "fasta",
+      "deskripsi": "10 urutan ASV",
+      "sha256": "7f3db026bd30d46683437a65b5d2313df86c5a6b3770876d825919e871d81eb6"
+    }
+  ],
+  "informasi_hilang": [
+    {
+      "berkas": "aturan",
+      "masalah": "tag_jump_fraction belum dikalibrasi",
+      "dampak": "ambang data nyasar memakai nilai usulan 0,001",
+      "tingkat": "info"
+    },
+    {
+      "berkas": "metadata",
+      "masalah": "2 sampel di metadata tanpa bacaan (SIM-MTN-NEG-B2, SIM-MTN-NEG-B3)",
+      "dampak": "dihitung sebagai nol bacaan",
+      "tingkat": "info"
+    },
+    {
+      "berkas": "metadata",
+      "masalah": "data berlabel SIMULASI",
+      "dampak": "laporan ditandai SIMULASI",
+      "tingkat": "info"
+    }
+  ],
+  "klaim": [
+    {
+      "id": "asv01@MTN-ST1",
+      "asv": "asv01",
+      "stasiun": "MTN-ST1",
+      "danau": "Matano",
+      "nama_lab": "Oreochromis niloticus",
+      "dilaporkan": "Oreochromis niloticus",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "B",
+      "skor": 4,
+      "batas_D": "",
+      "penyebab": [
+        "marker"
+      ],
+      "peluang_belum_di_kamus": 0.0,
+      "label_L3": [
+        "invasif"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv01@MTN-ST2",
+      "asv": "asv01",
+      "stasiun": "MTN-ST2",
+      "danau": "Matano",
+      "nama_lab": "Oreochromis niloticus",
+      "dilaporkan": "Oreochromis niloticus",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "B",
+      "skor": 4,
+      "batas_D": "",
+      "penyebab": [
+        "marker"
+      ],
+      "peluang_belum_di_kamus": 0.0,
+      "label_L3": [
+        "invasif"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv02@MTN-ST1",
+      "asv": "asv02",
+      "stasiun": "MTN-ST1",
+      "danau": "Matano",
+      "nama_lab": "Channa striata",
+      "dilaporkan": "Channa striata",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "A",
+      "skor": 5,
+      "batas_D": "",
+      "penyebab": [],
+      "peluang_belum_di_kamus": 0.0,
+      "label_L3": [
+        "invasif"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv03@MTN-ST3",
+      "asv": "asv03",
+      "stasiun": "MTN-ST3",
+      "danau": "Matano",
+      "nama_lab": "Pterygoplichthys disjunctivus",
+      "dilaporkan": "Pterygoplichthys",
+      "tingkat": "genus",
+      "kemiripan": 100.0,
+      "nilai": "C",
+      "skor": 3,
+      "batas_D": "",
+      "penyebab": [
+        "marker"
+      ],
+      "peluang_belum_di_kamus": 0.0,
+      "label_L3": [
+        "invasif"
+      ],
+      "keputusan": "wajib verifikasi"
+    },
+    {
+      "id": "asv04@MTN-ST1",
+      "asv": "asv04",
+      "stasiun": "MTN-ST1",
+      "danau": "Matano",
+      "nama_lab": "Cyprinus carpio",
+      "dilaporkan": "Cyprinus carpio",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "D",
+      "skor": 5,
+      "batas_D": "DNA muncul di kontrol negatif batch yang sama (B1)",
+      "penyebab": [
+        "sampel"
+      ],
+      "peluang_belum_di_kamus": 0.0,
+      "label_L3": [
+        "invasif"
+      ],
+      "keputusan": "wajib verifikasi"
+    },
+    {
+      "id": "asv04@MTN-ST2",
+      "asv": "asv04",
+      "stasiun": "MTN-ST2",
+      "danau": "Matano",
+      "nama_lab": "Cyprinus carpio",
+      "dilaporkan": "Cyprinus carpio",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "A",
+      "skor": 5,
+      "batas_D": "",
+      "penyebab": [],
+      "peluang_belum_di_kamus": 0.0,
+      "label_L3": [
+        "invasif"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv05@MTN-ST1",
+      "asv": "asv05",
+      "stasiun": "MTN-ST1",
+      "danau": "Matano",
+      "nama_lab": "Amphilophus citrinellus",
+      "dilaporkan": "Amphilophus citrinellus",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "B",
+      "skor": 4,
+      "batas_D": "",
+      "penyebab": [
+        "marker"
+      ],
+      "peluang_belum_di_kamus": null,
+      "label_L3": [
+        "invasif",
+        "kemungkinan louhan hibrida"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv05@MTN-ST2",
+      "asv": "asv05",
+      "stasiun": "MTN-ST2",
+      "danau": "Matano",
+      "nama_lab": "Amphilophus citrinellus",
+      "dilaporkan": "Amphilophus citrinellus",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "B",
+      "skor": 4,
+      "batas_D": "",
+      "penyebab": [
+        "marker"
+      ],
+      "peluang_belum_di_kamus": null,
+      "label_L3": [
+        "invasif",
+        "kemungkinan louhan hibrida"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv05@MTN-ST3",
+      "asv": "asv05",
+      "stasiun": "MTN-ST3",
+      "danau": "Matano",
+      "nama_lab": "Amphilophus citrinellus",
+      "dilaporkan": "Amphilophus citrinellus",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "B",
+      "skor": 4,
+      "batas_D": "",
+      "penyebab": [
+        "marker"
+      ],
+      "peluang_belum_di_kamus": null,
+      "label_L3": [
+        "invasif",
+        "kemungkinan louhan hibrida"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv06@MTN-ST3",
+      "asv": "asv06",
+      "stasiun": "MTN-ST3",
+      "danau": "Matano",
+      "nama_lab": "Telmatherina celebensis",
+      "dilaporkan": "Telmatherina",
+      "tingkat": "genus",
+      "kemiripan": 100.0,
+      "nilai": "B",
+      "skor": 4,
+      "batas_D": "",
+      "penyebab": [
+        "referensi"
+      ],
+      "peluang_belum_di_kamus": 1.0,
+      "label_L3": [
+        "kemungkinan endemik di luar kamus"
+      ],
+      "keputusan": "aman dilaporkan"
+    },
+    {
+      "id": "asv07@MTN-ST2",
+      "asv": "asv07",
+      "stasiun": "MTN-ST2",
+      "danau": "Matano",
+      "nama_lab": "Telmatherina celebensis",
+      "dilaporkan": "Telmatherina",
+      "tingkat": "genus",
+      "kemiripan": 97.04,
+      "nilai": "C",
+      "skor": 3,
+      "batas_D": "",
+      "penyebab": [
+        "referensi"
+      ],
+      "peluang_belum_di_kamus": 1.0,
+      "label_L3": [
+        "kemungkinan endemik di luar kamus"
+      ],
+      "keputusan": "wajib verifikasi"
+    },
+    {
+      "id": "asv07@MTN-ST3",
+      "asv": "asv07",
+      "stasiun": "MTN-ST3",
+      "danau": "Matano",
+      "nama_lab": "Telmatherina celebensis",
+      "dilaporkan": "Telmatherina",
+      "tingkat": "genus",
+      "kemiripan": 97.04,
+      "nilai": "C",
+      "skor": 3,
+      "batas_D": "",
+      "penyebab": [
+        "referensi"
+      ],
+      "peluang_belum_di_kamus": 1.0,
+      "label_L3": [
+        "kemungkinan endemik di luar kamus"
+      ],
+      "keputusan": "wajib verifikasi"
+    },
+    {
+      "id": "asv08@MTN-ST1",
+      "asv": "asv08",
+      "stasiun": "MTN-ST1",
+      "danau": "Matano",
+      "nama_lab": "Glossogobius flavipinnis",
+      "dilaporkan": "tidak dikenal",
+      "tingkat": "tidak dikenal",
+      "kemiripan": 92.31,
+      "nilai": "D",
+      "skor": 1,
+      "batas_D": "",
+      "penyebab": [
+        "referensi"
+      ],
+      "peluang_belum_di_kamus": null,
+      "label_L3": [
+        "kemungkinan endemik di luar kamus"
+      ],
+      "keputusan": "dengan catatan"
+    },
+    {
+      "id": "asv09@MTN-ST3",
+      "asv": "asv09",
+      "stasiun": "MTN-ST3",
+      "danau": "Matano",
+      "nama_lab": "Oryzias dancena",
+      "dilaporkan": "Oryzias",
+      "tingkat": "genus",
+      "kemiripan": 100.0,
+      "nilai": "C",
+      "skor": 3,
+      "batas_D": "",
+      "penyebab": [
+        "referensi",
+        "marker",
+        "lokasi"
+      ],
+      "peluang_belum_di_kamus": 1.0,
+      "label_L3": [
+        "kemungkinan endemik di luar kamus"
+      ],
+      "keputusan": "wajib verifikasi"
+    },
+    {
+      "id": "asv10@MTN-ST2",
+      "asv": "asv10",
+      "stasiun": "MTN-ST2",
+      "danau": "Matano",
+      "nama_lab": "Anguilla marmorata",
+      "dilaporkan": "Anguilla marmorata",
+      "tingkat": "spesies",
+      "kemiripan": 100.0,
+      "nilai": "D",
+      "skor": 2,
+      "batas_D": "semua bacaan di bawah 10 (total 6)",
+      "penyebab": [
+        "referensi",
+        "sampel"
+      ],
+      "peluang_belum_di_kamus": 0.5,
+      "label_L3": [],
+      "keputusan": "jangan dipakai"
+    }
+  ],
+  "kartu": {
+    "asv01@MTN-ST1": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "B",
+        "skor": "4/5",
+        "galat_nilai": "11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "0,00",
+        "catatan_peluang": "0 dari 1 spesies Oreochromis di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "marker"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Oreochromis niloticus: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Oreochromis niloticus: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Oreochromis niloticus; selisih 0,6% dari spesies lain terdekat. 0 dari 1 spesies Oreochromis di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Oreochromis niloticus; 0.6% from the nearest other species. 0 of 1 Oreochromis species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B1).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B1)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: budidaya; tebar benih.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: keramba jaring apung; limbah pasar ikan; terbawa arus dari hulu.",
+        "fasilitas": ""
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Oreochromis niloticus"
+      ]
+    },
+    "asv01@MTN-ST2": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "B",
+        "skor": "4/5",
+        "galat_nilai": "11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "0,00",
+        "catatan_peluang": "0 dari 1 spesies Oreochromis di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "marker"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Oreochromis niloticus: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Oreochromis niloticus: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Oreochromis niloticus; selisih 0,6% dari spesies lain terdekat. 0 dari 1 spesies Oreochromis di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Oreochromis niloticus; 0.6% from the nearest other species. 0 of 1 Oreochromis species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B2).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B2)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: budidaya; tebar benih.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: keramba jaring apung; limbah pasar ikan; terbawa arus dari hulu.",
+        "fasilitas": "Fasilitas di sekitar lokasi: keramba jaring apung nila sekitar 300 m dari stasiun (SIMULASI)."
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Oreochromis niloticus"
+      ]
+    },
+    "asv02@MTN-ST1": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "A",
+        "skor": "5/5",
+        "galat_nilai": "30,8% (n=39; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "0,00",
+        "catatan_peluang": "0 dari 1 spesies Channa di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": []
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Channa striata: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Channa striata: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 2,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Channa striata; selisih 4,7% dari spesies lain terdekat. 0 dari 1 spesies Channa di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Channa striata; 4.7% from the nearest other species. 0 of 1 Channa species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B1).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B1)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: tebar benih; lepas dari budidaya.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: limbah pasar ikan; terbawa arus dari hulu.",
+        "fasilitas": ""
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Channa striata"
+      ]
+    },
+    "asv03@MTN-ST3": {
+      "keluaran": {
+        "tingkat": "genus",
+        "nilai": "C",
+        "skor": "3/5",
+        "galat_nilai": "0,7% (n=135; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "0,00",
+        "catatan_peluang": "0 dari 1 spesies Pterygoplichthys di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "marker"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Pterygoplichthys: 3 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Pterygoplichthys: 3 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 0,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Pterygoplichthys disjunctivus; selisih 0,0% dari spesies lain terdekat. 0 dari 1 spesies Pterygoplichthys di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Pterygoplichthys disjunctivus; 0.0% from the nearest other species. 0 of 1 Pterygoplichthys species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B3).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B3)."
+        }
+      ],
+      "tindak_lanjut": "Verifikasi dengan marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher sebelum dipakai. Pakai marker kedua (COI atau 16S) atau survei tangkap. Jangan dijadikan dasar pemberantasan sebelum dicek.",
+      "asal_usul": null,
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Pterygoplichthys anisitsi",
+        "Pterygoplichthys disjunctivus",
+        "Pterygoplichthys pardalis"
+      ]
+    },
+    "asv04@MTN-ST1": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "D",
+        "skor": "5/5 → D",
+        "galat_nilai": "belum dikalibrasi (n=0)",
+        "peluang": "0,00",
+        "catatan_peluang": "0 dari 1 spesies Cyprinus di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "sampel"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Cyprinus carpio: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Cyprinus carpio: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 2,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Cyprinus carpio; selisih 1,2% dari spesies lain terdekat. 0 dari 1 spesies Cyprinus di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Cyprinus carpio; 1.2% from the nearest other species. 0 of 1 Cyprinus species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; DNA ini muncul di kontrol negatif batch yang sama (B1).",
+          "en": "Detected in 3 of 3 replicates; this DNA appears in a negative control of the same batch (B1)."
+        }
+      ],
+      "tindak_lanjut": "Verifikasi dengan marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher sebelum dipakai. Tinjau batch ekstraksi; ulang PCR. Jangan dijadikan dasar pemberantasan sebelum dicek.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: budidaya; tebar benih.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: keramba atau kolam; limbah pasar ikan.",
+        "fasilitas": ""
+      },
+      "batas_D": "DNA muncul di kontrol negatif batch yang sama (B1)",
+      "kecocokan_dalam_0,5%": [
+        "Cyprinus carpio"
+      ]
+    },
+    "asv04@MTN-ST2": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "A",
+        "skor": "5/5",
+        "galat_nilai": "30,8% (n=39; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "0,00",
+        "catatan_peluang": "0 dari 1 spesies Cyprinus di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": []
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Cyprinus carpio: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Cyprinus carpio: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 2,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Cyprinus carpio; selisih 1,2% dari spesies lain terdekat. 0 dari 1 spesies Cyprinus di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Cyprinus carpio; 1.2% from the nearest other species. 0 of 1 Cyprinus species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B2).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B2)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: budidaya; tebar benih.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: keramba atau kolam; limbah pasar ikan.",
+        "fasilitas": "Fasilitas di sekitar lokasi: keramba jaring apung nila sekitar 300 m dari stasiun (SIMULASI)."
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Cyprinus carpio"
+      ]
+    },
+    "asv05@MTN-ST1": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "B",
+        "skor": "4/5",
+        "galat_nilai": "11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "tidak dihitung",
+        "catatan_peluang": "Tidak dihitung: Amphilophus tidak ada di checklist wilayah",
+        "penyebab": [
+          "marker"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Amphilophus citrinellus: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Amphilophus citrinellus: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Amphilophus citrinellus; selisih 0,6% dari spesies lain terdekat.",
+          "en": "100.0% identity to Amphilophus citrinellus; 0.6% from the nearest other species."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano (lewat alias louhan hibrida).",
+          "en": "Recorded in the Matano checklist (via alias louhan hibrida)."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B1).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B1)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: perdagangan ikan hias; dilepas atau dibuang pemelihara.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: limbah atau air buangan akuarium; terbawa arus dari hulu.",
+        "fasilitas": ""
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Amphilophus citrinellus"
+      ]
+    },
+    "asv05@MTN-ST2": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "B",
+        "skor": "4/5",
+        "galat_nilai": "11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "tidak dihitung",
+        "catatan_peluang": "Tidak dihitung: Amphilophus tidak ada di checklist wilayah",
+        "penyebab": [
+          "marker"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Amphilophus citrinellus: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Amphilophus citrinellus: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Amphilophus citrinellus; selisih 0,6% dari spesies lain terdekat.",
+          "en": "100.0% identity to Amphilophus citrinellus; 0.6% from the nearest other species."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano (lewat alias louhan hibrida).",
+          "en": "Recorded in the Matano checklist (via alias louhan hibrida)."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B2).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B2)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: perdagangan ikan hias; dilepas atau dibuang pemelihara.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: limbah atau air buangan akuarium; terbawa arus dari hulu.",
+        "fasilitas": "Fasilitas di sekitar lokasi: keramba jaring apung nila sekitar 300 m dari stasiun (SIMULASI)."
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Amphilophus citrinellus"
+      ]
+    },
+    "asv05@MTN-ST3": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "B",
+        "skor": "4/5",
+        "galat_nilai": "11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "tidak dihitung",
+        "catatan_peluang": "Tidak dihitung: Amphilophus tidak ada di checklist wilayah",
+        "penyebab": [
+          "marker"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Amphilophus citrinellus: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Amphilophus citrinellus: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Amphilophus citrinellus; selisih 0,6% dari spesies lain terdekat.",
+          "en": "100.0% identity to Amphilophus citrinellus; 0.6% from the nearest other species."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano (lewat alias louhan hibrida).",
+          "en": "Recorded in the Matano checklist (via alias louhan hibrida)."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B3).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B3)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": {
+        "status": "Status di Matano: kemungkinan introduksi, invasif.",
+        "jalur": "Jalur masuk yang tercatat: perdagangan ikan hias; dilepas atau dibuang pemelihara.",
+        "sumber_dna": "Kemungkinan sumber DNA selain ikan hidup: limbah atau air buangan akuarium; terbawa arus dari hulu.",
+        "fasilitas": ""
+      },
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Amphilophus citrinellus"
+      ]
+    },
+    "asv06@MTN-ST3": {
+      "keluaran": {
+        "tingkat": "genus",
+        "nilai": "B",
+        "skor": "4/5",
+        "galat_nilai": "11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "1,00",
+        "catatan_peluang": "9 dari 9 spesies Telmatherina di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "referensi"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Telmatherina: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Telmatherina: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Telmatherina celebensis; selisih 16,5% dari spesies lain terdekat. 9 dari 9 spesies Telmatherina di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Telmatherina celebensis; 16.5% from the nearest other species. 9 of 9 Telmatherina species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B3).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B3)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di laporan pada tingkat nama yang tercantum.",
+      "asal_usul": null,
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Telmatherina celebensis"
+      ]
+    },
+    "asv07@MTN-ST2": {
+      "keluaran": {
+        "tingkat": "genus",
+        "nilai": "C",
+        "skor": "3/5",
+        "galat_nilai": "0,7% (n=135; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "1,00",
+        "catatan_peluang": "9 dari 9 spesies Telmatherina di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "referensi"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Telmatherina: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Telmatherina: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 0,
+          "maks": 2,
+          "id": "Kemiripan 97,0% dengan Telmatherina celebensis; selisih 15,3% dari spesies lain terdekat. 9 dari 9 spesies Telmatherina di Kompleks Malili belum punya referensi.",
+          "en": "97.0% identity to Telmatherina celebensis; 15.3% from the nearest other species. 9 of 9 Telmatherina species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B2).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B2)."
+        }
+      ],
+      "tindak_lanjut": "Verifikasi dengan marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher sebelum dipakai. Laporkan di tingkat genus; masukkan ke daftar prioritas barcode.",
+      "asal_usul": null,
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Telmatherina celebensis"
+      ]
+    },
+    "asv07@MTN-ST3": {
+      "keluaran": {
+        "tingkat": "genus",
+        "nilai": "C",
+        "skor": "3/5",
+        "galat_nilai": "0,7% (n=135; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "1,00",
+        "catatan_peluang": "9 dari 9 spesies Telmatherina di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "referensi"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Telmatherina: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Telmatherina: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 0,
+          "maks": 2,
+          "id": "Kemiripan 97,0% dengan Telmatherina celebensis; selisih 15,3% dari spesies lain terdekat. 9 dari 9 spesies Telmatherina di Kompleks Malili belum punya referensi.",
+          "en": "97.0% identity to Telmatherina celebensis; 15.3% from the nearest other species. 9 of 9 Telmatherina species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B3).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B3)."
+        }
+      ],
+      "tindak_lanjut": "Verifikasi dengan marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher sebelum dipakai. Laporkan di tingkat genus; masukkan ke daftar prioritas barcode.",
+      "asal_usul": null,
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Telmatherina celebensis"
+      ]
+    },
+    "asv08@MTN-ST1": {
+      "keluaran": {
+        "tingkat": "tidak dikenal",
+        "nilai": "D",
+        "skor": "1/5",
+        "galat_nilai": "belum dikalibrasi (n=0)",
+        "peluang": "tidak dihitung",
+        "catatan_peluang": "Tidak dihitung: nama tidak dikenal",
+        "penyebab": [
+          "referensi"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Tidak ada referensi yang cukup mirip; kemungkinan spesies belum ada di kamus.",
+          "en": "No sufficiently similar reference; the species may be missing from the reference."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 0,
+          "maks": 2,
+          "id": "Tidak ada referensi yang cukup mirip; kemungkinan spesies belum ada di kamus.",
+          "en": "No sufficiently similar reference; the species may be missing from the reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": null,
+          "maks": 1,
+          "id": "Tidak dinilai: nama tidak dikenal.",
+          "en": "Not assessed: name unknown."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 1,
+          "maks": 2,
+          "id": "Positif di 2 dari 3 replikat; kontrol negatif batch bersih (B1).",
+          "en": "Detected in 2 of 3 replicates; negative controls of the batch are clean (B1)."
+        }
+      ],
+      "tindak_lanjut": "Tulis di tingkat yang aman dan cek kemungkinan sumber DNA lain. Laporkan di tingkat genus; masukkan ke daftar prioritas barcode. Tulis sebagai \"ikan tidak dikenal, kemungkinan belum ada di kamus\".",
+      "asal_usul": null,
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": []
+    },
+    "asv09@MTN-ST3": {
+      "keluaran": {
+        "tingkat": "genus",
+        "nilai": "C",
+        "skor": "3/5",
+        "galat_nilai": "0,7% (n=135; uji tanpa-satu-spesies ref Malili v0.1)",
+        "peluang": "1,00",
+        "catatan_peluang": "1 dari 1 spesies Oryzias di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "referensi",
+          "marker",
+          "lokasi"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Oryzias: 2 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Oryzias: 2 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 0,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Oryzias dancena; selisih 0,0% dari spesies lain terdekat. 1 dari 1 spesies Oryzias di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Oryzias dancena; 0.0% from the nearest other species. 1 of 1 Oryzias species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 2,
+          "maks": 2,
+          "id": "Positif di 3 dari 3 replikat; kontrol negatif batch bersih (B3).",
+          "en": "Detected in 3 of 3 replicates; negative controls of the batch are clean (B3)."
+        }
+      ],
+      "tindak_lanjut": "Verifikasi dengan marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher sebelum dipakai. Laporkan di tingkat genus; masukkan ke daftar prioritas barcode. Pakai marker kedua (COI atau 16S) atau survei tangkap. Konfirmasi dengan survei; cek kemungkinan sumber DNA lain.",
+      "asal_usul": null,
+      "batas_D": "",
+      "kecocokan_dalam_0,5%": [
+        "Oryzias dancena",
+        "Oryzias melastigma"
+      ]
+    },
+    "asv10@MTN-ST2": {
+      "keluaran": {
+        "tingkat": "spesies",
+        "nilai": "D",
+        "skor": "2/5 → D",
+        "galat_nilai": "belum dikalibrasi (n=0)",
+        "peluang": "0,50",
+        "catatan_peluang": "1 dari 2 spesies Anguilla di Kompleks Malili belum punya referensi tervalidasi",
+        "penyebab": [
+          "referensi",
+          "sampel"
+        ]
+      },
+      "alasan": [
+        {
+          "lapisan": "penamaan",
+          "judul": "Penamaan",
+          "skor": null,
+          "maks": null,
+          "id": "Dilaporkan sebagai Anguilla marmorata: 1 spesies cocok dalam selisih 0,5%.",
+          "en": "Reported as Anguilla marmorata: 1 species matched within 0.5%."
+        },
+        {
+          "lapisan": "L1",
+          "judul": "L1 kamus DNA",
+          "skor": 1,
+          "maks": 2,
+          "id": "Kemiripan 100,0% dengan Anguilla marmorata; selisih 0,6% dari spesies lain terdekat. 1 dari 2 spesies Anguilla di Kompleks Malili belum punya referensi.",
+          "en": "100.0% identity to Anguilla marmorata; 0.6% from the nearest other species. 1 of 2 Anguilla species in Kompleks Malili lack a reference."
+        },
+        {
+          "lapisan": "L2",
+          "judul": "L2 lokasi",
+          "skor": 1,
+          "maks": 1,
+          "id": "Tercatat di checklist Matano.",
+          "en": "Recorded in the Matano checklist."
+        },
+        {
+          "lapisan": "L4",
+          "judul": "L4 sinyal lab",
+          "skor": 0,
+          "maks": 2,
+          "id": "Positif di 1 dari 3 replikat; kontrol negatif batch bersih (B2).",
+          "en": "Detected in 1 of 3 replicates; negative controls of the batch are clean (B2)."
+        }
+      ],
+      "tindak_lanjut": "Jangan masukkan ke laporan; tinjau batch ekstraksi dan abaikan data nyasar. Laporkan di tingkat genus; masukkan ke daftar prioritas barcode. Tinjau batch ekstraksi; ulang PCR.",
+      "asal_usul": null,
+      "batas_D": "semua bacaan di bawah 10 (total 6)",
+      "kecocokan_dalam_0,5%": [
+        "Anguilla marmorata"
+      ]
+    }
+  },
+  "celah": {
+    "judul": "1 dari 19 ikan endemik Kompleks Malili punya referensi 12S; 0 tervalidasi.",
+    "kelompok": [
+      {
+        "label": "Telmatherinidae endemik",
+        "petunjuk": "15 spesies",
+        "total": 15,
+        "ada_sekuens": 1,
+        "tervalidasi": 0
+      },
+      {
+        "label": "Endemik lain",
+        "petunjuk": "Glossogobius, Mugilogobius, Nomorhamphus, Oryzias",
+        "total": 4,
+        "ada_sekuens": 0,
+        "tervalidasi": 0
+      },
+      {
+        "label": "Ikan introduksi",
+        "petunjuk": "7 takson, louhan lewat spesies induk",
+        "total": 7,
+        "ada_sekuens": 7,
+        "tervalidasi": 7
+      },
+      {
+        "label": "Ikan asli lain",
+        "petunjuk": "2 spesies",
+        "total": 2,
+        "ada_sekuens": 1,
+        "tervalidasi": 1
+      }
+    ],
+    "per_genus": [
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Glossogobius",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Glossogobius matanensis"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Mugilogobius",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Mugilogobius adeia"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Nomorhamphus",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Nomorhamphus weberi"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Oryzias",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Oryzias matanensis"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Paratherina",
+        "n": 4,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Paratherina cyanea",
+          "Paratherina labiosa",
+          "Paratherina striata",
+          "Paratherina wolterecki"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Telmatherina",
+        "n": 9,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Telmatherina abendanoni",
+          "Telmatherina antoniae",
+          "Telmatherina bonti",
+          "Telmatherina celebensis",
+          "Telmatherina obscura",
+          "Telmatherina opudi",
+          "Telmatherina prognatha",
+          "Telmatherina sarasinorum",
+          "Telmatherina wahjui"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Tominanga",
+        "n": 2,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Tominanga aurea",
+          "Tominanga sanguicauda"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Anguilla",
+        "n": 2,
+        "r": 1,
+        "p": 0.5,
+        "tanpa_referensi": [
+          "Anguilla celebesensis"
+        ]
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Channa",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Clarias",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Colossoma",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Cyprinus",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Oreochromis",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Kompleks Malili",
+        "genus": "Pterygoplichthys",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Glossogobius",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Glossogobius matanensis"
+        ]
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Mugilogobius",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Mugilogobius adeia"
+        ]
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Nomorhamphus",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Nomorhamphus weberi"
+        ]
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Oryzias",
+        "n": 1,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Oryzias matanensis"
+        ]
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Telmatherina",
+        "n": 6,
+        "r": 0,
+        "p": 1.0,
+        "tanpa_referensi": [
+          "Telmatherina antoniae",
+          "Telmatherina obscura",
+          "Telmatherina opudi",
+          "Telmatherina prognatha",
+          "Telmatherina sarasinorum",
+          "Telmatherina wahjui"
+        ]
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Anguilla",
+        "n": 2,
+        "r": 1,
+        "p": 0.5,
+        "tanpa_referensi": [
+          "Anguilla celebesensis"
+        ]
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Channa",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Clarias",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Colossoma",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Cyprinus",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Oreochromis",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      },
+      {
+        "wilayah": "Matano",
+        "genus": "Pterygoplichthys",
+        "n": 1,
+        "r": 1,
+        "p": 0.0,
+        "tanpa_referensi": []
+      }
+    ],
+    "sumber": "ref12S v0.1: mitohelper 12S Juli 2026 (Lim & Thompson 2021); NCBI GenBank esummary; GBIF species API; IUCN Red List lewat GBIF; Kottelat 1990, 1991; Herder dkk. 2006; Hedianto & Sentosa 2019; Mongabay 2018. checklist sementara; perlu tinjauan ahli"
+  },
+  "prioritas_barcode": [
+    {
+      "urutan": 1,
+      "target": "Telmatherina antoniae",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 3
+    },
+    {
+      "urutan": 2,
+      "target": "Telmatherina obscura",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 3
+    },
+    {
+      "urutan": 3,
+      "target": "Telmatherina opudi",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 3
+    },
+    {
+      "urutan": 4,
+      "target": "Telmatherina prognatha",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 3
+    },
+    {
+      "urutan": 5,
+      "target": "Telmatherina sarasinorum",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 3
+    },
+    {
+      "urutan": 6,
+      "target": "Telmatherina wahjui",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik; terancam",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 3
+    },
+    {
+      "urutan": 7,
+      "target": "Telmatherina celebensis",
+      "jenis": "sekuens belum tervalidasi",
+      "danau": "Matano",
+      "status_L3": "",
+      "alasan": "sekuens ada tetapi tanpa specimen_voucher",
+      "klaim": 3
+    },
+    {
+      "urutan": 8,
+      "target": "ASV asv08 (tidak dikenal; terdekat Glossogobius flavipinnis 92.3%)",
+      "jenis": "tidak dikenal",
+      "danau": "Matano",
+      "status_L3": "kemungkinan endemik di luar kamus",
+      "alasan": "tidak ada referensi yang cukup mirip",
+      "klaim": 1
+    },
+    {
+      "urutan": 9,
+      "target": "Oryzias matanensis",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 1
+    },
+    {
+      "urutan": 10,
+      "target": "Oryzias dancena",
+      "jenis": "sekuens belum tervalidasi",
+      "danau": "Matano",
+      "status_L3": "",
+      "alasan": "sekuens ada tetapi tanpa specimen_voucher",
+      "klaim": 1
+    },
+    {
+      "urutan": 11,
+      "target": "Glossogobius matanensis",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 0
+    },
+    {
+      "urutan": 12,
+      "target": "Mugilogobius adeia",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik; terancam",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 0
+    },
+    {
+      "urutan": 13,
+      "target": "Nomorhamphus weberi",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "endemik",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 0
+    },
+    {
+      "urutan": 14,
+      "target": "Anguilla celebesensis",
+      "jenis": "celah kamus",
+      "danau": "Matano",
+      "status_L3": "",
+      "alasan": "belum punya sekuens 12S tervalidasi",
+      "klaim": 0
+    }
+  ],
+  "nama_ilmiah": [
+    "Amphilophus",
+    "Amphilophus citrinellus",
+    "Anguilla",
+    "Anguilla celebesensis",
+    "Anguilla marmorata",
+    "Channa",
+    "Channa striata",
+    "Clarias",
+    "Clarias gariepinus",
+    "Colossoma",
+    "Colossoma macropomum",
+    "Cyprinus",
+    "Cyprinus carpio",
+    "Glossogobius",
+    "Glossogobius flavipinnis",
+    "Glossogobius matanensis",
+    "Mugilogobius",
+    "Mugilogobius adeia",
+    "Nomorhamphus",
+    "Nomorhamphus weberi",
+    "Oreochromis",
+    "Oreochromis niloticus",
+    "Oryzias",
+    "Oryzias dancena",
+    "Oryzias matanensis",
+    "Oryzias melastigma",
+    "Paratherina",
+    "Paratherina cyanea",
+    "Paratherina labiosa",
+    "Paratherina striata",
+    "Paratherina wolterecki",
+    "Pterygoplichthys",
+    "Pterygoplichthys anisitsi",
+    "Pterygoplichthys disjunctivus",
+    "Pterygoplichthys pardalis",
+    "Telmatherina",
+    "Telmatherina abendanoni",
+    "Telmatherina antoniae",
+    "Telmatherina bonti",
+    "Telmatherina celebensis",
+    "Telmatherina obscura",
+    "Telmatherina opudi",
+    "Telmatherina prognatha",
+    "Telmatherina sarasinorum",
+    "Telmatherina wahjui",
+    "Tominanga",
+    "Tominanga aurea",
+    "Tominanga sanguicauda"
+  ],
+  "ekspor": {
+    "csv": "klaim.csv",
+    "pdf": "laporan.pdf",
+    "barcode": "prioritas_barcode.csv",
+    "manifest": "manifest.json"
+  }
+}

@@ -89,3 +89,13 @@ def test_demo_contract_values():
     assert "keramba" in card["asal_usul"]["fasilitas"] and card["asal_usul"]["status"].startswith("Status di Matano")
     assert dto["kartu"]["asv04@MTN-ST1"]["keluaran"]["skor"] == "5/5 → D"
     assert "Telmatherina celebensis" in dto["nama_ilmiah"] and "Telmatherina" in dto["nama_ilmiah"]
+
+
+@needs_blast
+def test_dashboard_demo_data_is_current():
+    """report.json di web/public/demo harus berasal dari mesin dan referensi saat ini."""
+    committed = json.loads((ROOT / "web" / "public" / "demo" / "report.json").read_text(encoding="utf-8"))
+    report = run(DEMO / "bacaan.csv", DEMO / "metadata.csv", DEMO / "taksonomi.csv", DEMO / "asv.fasta")
+    assert committed["meta"]["sidik_jari"] == f"sha256:{report.fingerprint}", \
+        "jalankan ulang: python scripts/build_dashboard_data.py"
+    assert committed["ringkasan"]["kalimat"] == report.summary_sentence()

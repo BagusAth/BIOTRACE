@@ -110,6 +110,13 @@ Demo dan bukti (tahap 6–7):
 .venv/Scripts/python scripts/pitch_numbers.py
 ```
 
+Dashboard satu halaman (Next.js, mode statis) untuk pitch ada di `web/`; lihat `web/README.md`:
+
+```bash
+.venv/Scripts/python scripts/build_dashboard_data.py
+cd web && npm install && npm run build
+```
+
 Di aplikasi, tombol **Muat demo Danau Matano (SIMULASI)** menjalankan skenario demo. Data yang
 membawa kolom `label_data = SIMULASI` otomatis ditandai SIMULASI di layar, kartu, dan PDF.
 

@@ -1,0 +1,15 @@
+target,jenis,danau,jumlah_klaim_terdampak,status_L3,alasan
+Telmatherina antoniae,celah kamus,Matano,3,endemik,belum punya sekuens 12S tervalidasi
+Telmatherina obscura,celah kamus,Matano,3,endemik,belum punya sekuens 12S tervalidasi
+Telmatherina opudi,celah kamus,Matano,3,endemik,belum punya sekuens 12S tervalidasi
+Telmatherina prognatha,celah kamus,Matano,3,endemik,belum punya sekuens 12S tervalidasi
+Telmatherina sarasinorum,celah kamus,Matano,3,endemik,belum punya sekuens 12S tervalidasi
+Telmatherina wahjui,celah kamus,Matano,3,endemik; terancam,belum punya sekuens 12S tervalidasi
+Telmatherina celebensis,sekuens belum tervalidasi,Matano,3,,sekuens ada tetapi tanpa specimen_voucher
+ASV asv08 (tidak dikenal; terdekat Glossogobius flavipinnis 92.3%),tidak dikenal,Matano,1,kemungkinan endemik di luar kamus,tidak ada referensi yang cukup mirip
+Oryzias matanensis,celah kamus,Matano,1,endemik,belum punya sekuens 12S tervalidasi
+Oryzias dancena,sekuens belum tervalidasi,Matano,1,,sekuens ada tetapi tanpa specimen_voucher
+Glossogobius matanensis,celah kamus,Matano,0,endemik,belum punya sekuens 12S tervalidasi
+Mugilogobius adeia,celah kamus,Matano,0,endemik; terancam,belum punya sekuens 12S tervalidasi
+Nomorhamphus weberi,celah kamus,Matano,0,endemik,belum punya sekuens 12S tervalidasi
+Anguilla celebesensis,celah kamus,Matano,0,,belum punya sekuens 12S tervalidasi

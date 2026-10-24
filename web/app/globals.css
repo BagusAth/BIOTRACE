@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Token desain dari mockup "Dashboard verifikasi eDNA · satu halaman". */
+@theme {
+  --color-page: #f4f6f5;
+  --color-card: #ffffff;
+  --color-line: #d9e0de;
+  --color-line-soft: #edf1f0;
+  --color-line-strong: #c5cfcc;
+  --color-ink: #12201d;
+  --color-ink-2: #2e3b38;
+  --color-muted: #4a5a56;
+  --color-accent: #0f6b63;
+  --color-accent-ink: #0f5e57;
+  --color-accent-hover: #0a4a44;
+  --color-selected: #eef6f4;
+  --color-sim-line: #b9844d;
+  --color-sim-bg: #fff8ef;
+  --color-sim-ink: #6b3a08;
+  --color-warn-bg: #fcebd9;
+  --color-warn-ink: #8a4100;
+  --color-warn-icon: #8a4100;
+  --color-gap-endemic: #b45309;
+  --color-cause-ref: #b45309;
+  --color-cause-other: #5b6b7f;
+
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+button {
+  font-family: inherit;
+}
