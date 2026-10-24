@@ -57,6 +57,28 @@ tests/                  uji per aturan dengan data kecil
 app.py                  antarmuka Streamlit
 ```
 
+## Menjalankan
+
+Antarmuka Streamlit (5 halaman: unggah, ringkasan keputusan, tabel klaim, Evidence Card,
+peta celah; ekspor PDF, CSV, prioritas barcode, manifest di sidebar):
+
+```bash
+.venv/Scripts/python -m streamlit run app.py
+```
+
+Baris perintah:
+
+```bash
+.venv/Scripts/python -m biotrace run --reads bacaan.csv --metadata metadata.csv --fasta asv.fasta --out out/
+```
+
+Keluaran di `out/`: `klaim.csv` (skema keluaran PRD), `prioritas_barcode.csv`,
+`laporan.pdf` (Bahasa Indonesia), `manifest.json` (SHA-256 input, versi referensi dan aturan,
+sidik jari laporan), `ringkasan.json`.
+
+Uji kinerja (200 sampel, 2.000 ASV, termasuk BLAST): `scripts/benchmark.py` — sekitar 21 detik
+di laptop pengembang.
+
 ## Uji
 
 ```bash

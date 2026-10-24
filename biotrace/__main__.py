@@ -3,13 +3,12 @@
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 from pathlib import Path
 
 from .config import load_rules
 from .pipeline import run
-from .provenance import write_manifest
 from .reference import load_reference
+from .report import write_outputs
 
 
 def main(argv=None) -> None:
@@ -32,11 +31,7 @@ def main(argv=None) -> None:
                  rules=load_rules(args.rules) if args.rules else None,
                  reference=load_reference(args.reference) if args.reference else None,
                  mode=args.mode, threads=args.threads, simulation=args.simulation)
-    args.out.mkdir(parents=True, exist_ok=True)
-    report.claims.to_csv(args.out / "klaim.csv", index=False, lineterminator="\n")
-    stamp = dt.datetime.now().isoformat(timespec="seconds")
-    write_manifest(args.out / "manifest.json", report.manifest, report.claims,
-                   run_time=f"{stamp} ({report.seconds:.1f} dtk)")
+    write_outputs(report, args.out)
     print(report.summary_sentence())
     print(f"sidik jari laporan: sha256:{report.fingerprint}")
     print(f"waktu proses: {report.seconds:.1f} dtk -> {args.out}")

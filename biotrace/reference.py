@@ -37,6 +37,13 @@ class Reference:
     pathways: pd.DataFrame
     completeness: pd.DataFrame
     files: dict[str, str] = field(default_factory=dict)
+    _cache: dict = field(default_factory=dict, repr=False, compare=False)
+
+    def _memo(self, key: tuple, fn):
+        """Tabel acuan kecil dan tetap selama proses: hasil pencarian cukup dihitung sekali."""
+        if key not in self._cache:
+            self._cache[key] = fn()
+        return self._cache[key]
 
     # ---- identitas dan versi -------------------------------------------------
     @property
@@ -80,24 +87,30 @@ class Reference:
         return db
 
     # ---- sekuens referensi ---------------------------------------------------
+    def _hit_index(self) -> dict[str, dict]:
+        return {r["aksesi"]: {
+            "aksesi": r["aksesi"],
+            "spesies": r["spesies"],
+            "spesies_kunci": r["spesies_kunci"],
+            "genus": r["genus"],
+            "famili": r["famili"],
+            "terselesaikan": r["terselesaikan"] == "ya",
+            "tervalidasi": r["status_validasi"] == "tervalidasi",
+            "tercatat_di_indonesia": r["tercatat_di_indonesia"],
+        } for r in self.taxonomy.to_dict("records")}
+
     def hit(self, accession: str) -> dict:
         acc = accession.split(".")[0]
-        if acc not in self.taxonomy.index:
+        info = self._memo(("hit_index",), self._hit_index).get(acc)
+        if info is None:
             return {"aksesi": acc, "spesies": "", "spesies_kunci": "", "genus": "", "famili": "",
                     "terselesaikan": False, "tervalidasi": False, "tercatat_di_indonesia": "belum dicek"}
-        row = self.taxonomy.loc[acc]
-        return {
-            "aksesi": acc,
-            "spesies": row["spesies"],
-            "spesies_kunci": row["spesies_kunci"],
-            "genus": row["genus"],
-            "famili": row["famili"],
-            "terselesaikan": row["terselesaikan"] == "ya",
-            "tervalidasi": row["status_validasi"] == "tervalidasi",
-            "tercatat_di_indonesia": row["tercatat_di_indonesia"],
-        }
+        return info
 
     def recorded_in_indonesia(self, species: str) -> str:
+        return self._memo(("recorded", species), lambda: self._recorded_in_indonesia(species))
+
+    def _recorded_in_indonesia(self, species: str) -> str:
         key, _ = species_key(species)
         rows = self.taxonomy[self.taxonomy["spesies_kunci"] == key]
         if len(rows):
@@ -105,6 +118,9 @@ class Reference:
         return "ya" if self._checklist_species_match(species, self.checklist) else "belum dicek"
 
     def family_of(self, genus: str) -> str:
+        return self._memo(("family", genus), lambda: self._family_of(genus))
+
+    def _family_of(self, genus: str) -> str:
         fam = self.taxonomy.loc[self.taxonomy["genus"] == genus, "famili"]
         if len(fam):
             return fam.mode().iloc[0]
@@ -114,6 +130,9 @@ class Reference:
     # ---- alias, checklist, status --------------------------------------------
     def alias_of(self, taxon: str) -> list[str]:
         """Nama alias (mis. 'louhan hibrida') untuk spesies, genus, atau hibrida."""
+        return list(self._memo(("alias", taxon), lambda: self._alias_of(taxon)))
+
+    def _alias_of(self, taxon: str) -> list[str]:
         if not taxon or self.alias.empty:
             return []
         out = set()
@@ -138,6 +157,9 @@ class Reference:
 
     def checklist_hit(self, taxon: str, rank: str, lake: str | None) -> tuple[bool, str]:
         """L2: apakah takson tercatat di checklist danau, langsung atau lewat alias."""
+        return self._memo(("l2", taxon, rank, lake), lambda: self._checklist_hit(taxon, rank, lake))
+
+    def _checklist_hit(self, taxon: str, rank: str, lake: str | None) -> tuple[bool, str]:
         cl = self.checklist_for(lake)
         if rank == "spesies":
             if len(self._checklist_species_match(taxon, cl)):
@@ -154,6 +176,9 @@ class Reference:
         return False, ""
 
     def status_row(self, name: str) -> dict:
+        return dict(self._memo(("status", name), lambda: self._status_row(name)))
+
+    def _status_row(self, name: str) -> dict:
         rows = self.status[self.status["spesies"].map(lambda s: same_species_name(s, name))]
         return rows.iloc[0].to_dict() if len(rows) else {}
 
@@ -170,6 +195,10 @@ class Reference:
 
     def l3_labels(self, taxon: str, rank: str, lake: str | None, near_family: str | None = None) -> list[str]:
         """L3: endemik, terancam, invasif, kemungkinan louhan hibrida, kemungkinan endemik di luar kamus."""
+        key = ("l3", taxon, rank, lake, near_family if rank == "tidak dikenal" else None)
+        return list(self._memo(key, lambda: self._l3_labels(taxon, rank, lake, near_family)))
+
+    def _l3_labels(self, taxon: str, rank: str, lake: str | None, near_family: str | None) -> list[str]:
         labels: set[str] = set()
         aliases = self.alias_of(taxon) if taxon else []
         if aliases:
@@ -202,6 +231,9 @@ class Reference:
         return sorted(labels)
 
     def pathway(self, taxon: str) -> dict:
+        return dict(self._memo(("pathway", taxon), lambda: self._pathway(taxon)))
+
+    def _pathway(self, taxon: str) -> dict:
         names = [taxon, *self.alias_of(taxon)]
         for n in names:
             rows = self.pathways[self.pathways["spesies"].map(lambda s: same_species_name(s, n))]

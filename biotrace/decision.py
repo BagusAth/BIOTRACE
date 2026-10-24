@@ -65,11 +65,16 @@ def origin(row: dict, reference, facility: str = "") -> str:
 def apply_decisions(claims: pd.DataFrame, reference, rules: dict, facilities: dict[str, str]) -> pd.DataFrame:
     out = claims.copy()
     dec, follow, orig = [], [], []
+    memo: dict[tuple, str] = {}
     for row in out.to_dict("records"):
         k, t = decide(row, rules)
         dec.append(k)
         follow.append(t)
-        orig.append(origin(row, reference, facilities.get(row["site_id"], "")))
+        fac = facilities.get(row["site_id"], "")
+        key = (row["taxon_dilaporkan"], row["tingkat"], row["danau"], row["label_L3"], fac)
+        if key not in memo:
+            memo[key] = origin(row, reference, fac)
+        orig.append(memo[key])
     out["keputusan"] = dec
     out["tindak_lanjut"] = follow
     out["asal_usul"] = orig
