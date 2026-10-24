@@ -62,6 +62,12 @@ class Report:
                 f"{s['tidak dikenal']} tidak dikenal.")
 
 
+def is_simulation(project: ProjectInput) -> bool:
+    """Data demo membawa kolom label_data = SIMULASI di setiap baris metadata."""
+    meta = project.metadata
+    return "label_data" in meta.columns and meta["label_data"].astype(str).str.upper().eq("SIMULASI").any()
+
+
 def naming_reason(row: dict, lang: str) -> str:
     if row["tingkat"] == "tidak dikenal":
         return texts.unknown_reason(lang)
@@ -100,6 +106,9 @@ def run(reads, metadata, taxonomy=None, fasta=None, rules: Rules | None = None,
             f"Referensi {reference.label} berjenis '{reference.kind}' hanya untuk mode uji; "
             "tidak boleh dipakai menamai ikan Indonesia")
     project = load_project(reads, metadata, taxonomy, fasta, rules=rules, reference_lakes=reference.lakes)
+    if is_simulation(project):
+        simulation = True
+        project.issues.append(Issue("metadata", "data berlabel SIMULASI", "laporan ditandai SIMULASI", "info"))
     namings, notes = name_project(project, reference, rules, threads=threads)
     for note in notes:
         project.issues.append(Issue("referensi", note, ""))

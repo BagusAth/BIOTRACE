@@ -1,0 +1,38 @@
+{
+  "aplikasi": "biotrace 0.2.0",
+  "aturan": "rules_v0.1.yaml (sha256:6149124510366b4538419438514ec35c9891bb75b74034d1bc10cda990582195)",
+  "informasi_hilang": [
+    "tag_jump_fraction belum dikalibrasi — ambang data nyasar memakai nilai usulan 0,001",
+    "2 sampel di metadata tanpa bacaan (SIM-MTN-NEG-B2, SIM-MTN-NEG-B3) — dihitung sebagai nol bacaan",
+    "data berlabel SIMULASI — laporan ditandai SIMULASI"
+  ],
+  "input": {
+    "asv.fasta": "sha256:7f3db026bd30d46683437a65b5d2313df86c5a6b3770876d825919e871d81eb6",
+    "bacaan.csv": "sha256:8fd7e8c2757d51c02373b770ab51e0dd6fd7d6848d90835b407db8dc1f9f66dd",
+    "metadata.csv": "sha256:c265622d71e7cb4c4c63e9e7fdc95598cd4e82189db59daf95a1c3ea7c104acc",
+    "taksonomi.csv": "sha256:d952122e83da538a0197f2ba5cc0eac8b60609fb0f41e19c7e1166d889cb0488"
+  },
+  "jenis_referensi": "indonesia",
+  "kalibrasi_galat": "data/test/results/galat_per_nilai.csv (sha256:a166a0ecc9eb1d3b37aa569df71a61fdac408718fa24b6bb30d4945623b35d24)",
+  "label_data": "SIMULASI",
+  "mode": "proyek",
+  "peran_input": {
+    "asv.fasta": "fasta",
+    "bacaan.csv": "bacaan",
+    "metadata.csv": "metadata",
+    "taksonomi.csv": "taksonomi"
+  },
+  "referensi": "ref12S v0.1 (sha256:b69a0501737be614bfd1efd512aa7b542404ebb89039e2e953887b1654353ab2)",
+  "sidik_jari_laporan": "sha256:10325c7c8571accc4fa8af7edd2fdd586ee209eb52005db1579fe5643eb4dd39",
+  "tabel_acuan": {
+    "alias.csv": "sha256:05a05ab6bc89f88c7a272c857cfddb0252cfdce81b6890bdbd03b4a87d202d7d",
+    "checklist_malili.csv": "sha256:65dee437282c9dc362e0be9e2daa05f8ea330ede0f1ee4804a219fc3eb96b12b",
+    "jalur_masuk.csv": "sha256:bec785aab71b82f7fd088981d2db6edaebfef5b308d18766a2ca7d60cb8fd9c3",
+    "kelengkapan.csv": "sha256:3ab04ecb00c6fbbf2c9646c25c7fa4982a6c1e74ee00397e030850401c896bda",
+    "ref12S.fasta": "sha256:cc307d2d336db0eedd0524ace8d83c1b62d3e970b623f7747dd5b0c4b91b3c87",
+    "ref12S_taksonomi.csv": "sha256:11d48fbaa7b1d84c94d1b757518b5fd31c7cf542e93d4d30e12101298fb4eefa",
+    "reference.yaml": "sha256:5d14a7c9f40c450af0254ab55a416064ce6e88004c88ae5fd1a07225c4faa927",
+    "status.csv": "sha256:a18016bd37d71aad3b72ba7e99ad5edf9954e71fd8f2d0fc67a1f4df9505bc70"
+  },
+  "waktu_proses_tidak_di_hash": "2026-10-24T21:01:37 (0.5 dtk)"
+}

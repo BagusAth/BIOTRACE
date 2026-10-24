@@ -1,0 +1,11 @@
+asv_id,taxon,rank,pct_identity,runner_up_taxon,runner_up_pct_identity,reference_db,label_data
+asv01,Oreochromis niloticus,species,100.0,Oreochromis sp. KM-2006,99.41,NCBI nt (SIMULASI),SIMULASI
+asv02,Channa striata,species,100.0,Channa marulius,95.27,NCBI nt (SIMULASI),SIMULASI
+asv03,Pterygoplichthys disjunctivus,species,100.0,Pterygoplichthys anisitsi,100.0,NCBI nt (SIMULASI),SIMULASI
+asv04,Cyprinus carpio,species,100.0,Cyprinus sp. CBM ZF 11624,98.84,NCBI nt (SIMULASI),SIMULASI
+asv05,Amphilophus citrinellus,species,100.0,Amphilophus amarillo,99.45,NCBI nt (SIMULASI),SIMULASI
+asv06,Telmatherina celebensis,species,100.0,Channa micropeltes,83.54,NCBI nt (SIMULASI),SIMULASI
+asv07,Telmatherina celebensis,species,97.04,Channa micropeltes,81.71,NCBI nt (SIMULASI),SIMULASI
+asv08,Glossogobius flavipinnis,genus,92.31,Glossogobius sp. KAUM:I:117597,91.57,NCBI nt (SIMULASI),SIMULASI
+asv09,Oryzias dancena,species,100.0,Oryzias melastigma,100.0,NCBI nt (SIMULASI),SIMULASI
+asv10,Anguilla marmorata,species,100.0,Anguilla interioris,99.41,NCBI nt (SIMULASI),SIMULASI

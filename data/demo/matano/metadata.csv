@@ -1,0 +1,13 @@
+sample_id,site_id,latitude,longitude,collection_date,sample_type,replicate,extraction_batch,marker,lake,fasilitas_sekitar,label_data
+SIM-MTN-ST1-A,MTN-ST1,-2.471,121.295,2026-08-14,sampel,1,B1,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-ST1-B,MTN-ST1,-2.471,121.295,2026-08-14,sampel,2,B1,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-ST1-C,MTN-ST1,-2.471,121.295,2026-08-14,sampel,3,B1,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-NEG-B1,NEG-B1,,,2026-08-14,kontrol_negatif_pcr,1,B1,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-ST2-A,MTN-ST2,-2.498,121.356,2026-08-14,sampel,1,B2,12S MiFish-U,Matano,keramba jaring apung nila sekitar 300 m dari stasiun (SIMULASI),SIMULASI
+SIM-MTN-ST2-B,MTN-ST2,-2.498,121.356,2026-08-14,sampel,2,B2,12S MiFish-U,Matano,keramba jaring apung nila sekitar 300 m dari stasiun (SIMULASI),SIMULASI
+SIM-MTN-ST2-C,MTN-ST2,-2.498,121.356,2026-08-14,sampel,3,B2,12S MiFish-U,Matano,keramba jaring apung nila sekitar 300 m dari stasiun (SIMULASI),SIMULASI
+SIM-MTN-NEG-B2,NEG-B2,,,2026-08-14,kontrol_negatif_pcr,1,B2,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-ST3-A,MTN-ST3,-2.529,121.418,2026-08-14,sampel,1,B3,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-ST3-B,MTN-ST3,-2.529,121.418,2026-08-14,sampel,2,B3,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-ST3-C,MTN-ST3,-2.529,121.418,2026-08-14,sampel,3,B3,12S MiFish-U,Matano,,SIMULASI
+SIM-MTN-NEG-B3,NEG-B3,,,2026-08-14,kontrol_negatif_pcr,1,B3,12S MiFish-U,Matano,,SIMULASI

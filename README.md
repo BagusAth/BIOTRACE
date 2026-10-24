@@ -43,6 +43,27 @@ St. Pierre hanya lima CSV kecil dan README yang diambil, tanpa `raw_seq.zip` (2,
 `data/raw/` tidak di-commit; isinya bisa diunduh ulang dan dicek dengan SHA-256 di
 `data/ref/v0.1/manifest.csv`.
 
+## Tahap implementasi
+
+| Tahap | Kebutuhan PRD | Isi | Berkas utama |
+|---|---|---|---|
+| 0. Persiapan | — | lingkungan, BLAST+, manifest data, aturan v0.1 | `scripts/setup_blast.py`, `scripts/fetch_raw.py`, `rules/rules_v0.1.yaml` |
+| 1. Referensi | F5–F7 | referensi 12S Malili tervalidasi, checklist, status, alias, kelengkapan | `scripts/build_reference.py`, `biotrace/reference.py`, `data/ref/v0.1/` |
+| 2. Input dan jejak | F1–F4 | baca 3 CSV + FASTA, validasi, sidik jari | `biotrace/io.py`, `biotrace/provenance.py` |
+| 3. Penamaan dan audit | F8–F15 | BLAST, tingkat nama, "tidak dikenal", L1–L4 | `biotrace/naming.py`, `biotrace/audit.py` |
+| 4. Penilaian dan keputusan | F16–F21 | nilai A–D, penyebab, peluang belum di kamus, keputusan, asal-usul | `biotrace/scoring.py`, `biotrace/decision.py`, `biotrace/pipeline.py` |
+| 5. Keluaran | F22–F25 | ringkasan, Evidence Card, PDF, CSV, prioritas barcode, Streamlit | `biotrace/report.py`, `app.py` |
+| 6. Uji mesin | F26–F27 | uji tanpa-satu-spesies, mode uji Lake St. Pierre | `biotrace/simulate.py`, `scripts/run_engine_tests.py`, `data/test/results/` |
+| 7. Demo dan bukti | — | skenario Matano berlabel SIMULASI, angka pitch | `scripts/make_demo.py`, `data/demo/matano/`, `docs/angka_pitch.md` |
+
+Temuan utama (rincian di `docs/angka_pitch.md` dan `data/test/results/README.md`):
+
+- 1 dari 19 endemik Malili punya sekuens 12S, dan sekuens itu (*T. celebensis*) tanpa voucher,
+  jadi 0 dari 19 tervalidasi.
+- Uji tanpa-satu-spesies pada kandidat Malili: ambang 97% meloloskan 70,2% nama keliru, aturan
+  BioTrace 6,0%. Lake St. Pierre: 91,9% spesies terhapus tidak diberi nama lain.
+- `tag_jump_fraction` belum dikalibrasi (tabel Li dkk. 2019 belum ada di repo).
+
 ## Struktur
 
 ```
@@ -78,6 +99,18 @@ sidik jari laporan), `ringkasan.json`.
 
 Uji kinerja (200 sampel, 2.000 ASV, termasuk BLAST): `scripts/benchmark.py` — sekitar 21 detik
 di laptop pengembang.
+
+Demo dan bukti (tahap 6–7):
+
+```bash
+.venv/Scripts/python scripts/build_test_ref.py
+.venv/Scripts/python scripts/run_engine_tests.py
+.venv/Scripts/python scripts/make_demo.py
+.venv/Scripts/python scripts/pitch_numbers.py
+```
+
+Di aplikasi, tombol **Muat demo Danau Matano (SIMULASI)** menjalankan skenario demo. Data yang
+membawa kolom `label_data = SIMULASI` otomatis ditandai SIMULASI di layar, kartu, dan PDF.
 
 ## Uji
 

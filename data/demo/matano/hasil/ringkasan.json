@@ -1,0 +1,20 @@
+{
+  "kalimat": "Dari 15 klaim, 8 aman dilaporkan, 1 dengan catatan, 5 wajib verifikasi, 1 jangan dipakai; 1 tidak dikenal.",
+  "jumlah": {
+    "n": 15,
+    "aman dilaporkan": 8,
+    "dengan catatan": 1,
+    "wajib verifikasi": 5,
+    "jangan dipakai": 1,
+    "tidak dikenal": 1
+  },
+  "tindak_lanjut": {
+    "aman dilaporkan": "Masukkan ke laporan pada tingkat nama yang tercantum.",
+    "dengan catatan": "Tulis di tingkat yang aman (genus atau tidak dikenal) dan cek kemungkinan sumber DNA lain.",
+    "wajib verifikasi": "Jadwalkan verifikasi: marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher.",
+    "jangan dipakai": "Keluarkan dari laporan; tinjau batch ekstraksi dan ulang PCR bila perlu."
+  },
+  "batas_interpretasi": "Deteksi DNA bukan bukti pasti ikan hidup di lokasi.",
+  "waktu_proses_detik": 0.46,
+  "sidik_jari_laporan": "sha256:10325c7c8571accc4fa8af7edd2fdd586ee209eb52005db1579fe5643eb4dd39"
+}

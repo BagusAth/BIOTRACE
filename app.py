@@ -47,6 +47,7 @@ def run_project(files: dict[str, NamedBytes | None], simulation: bool) -> None:
     report = run(files["reads"], files["metadata"], files.get("taxonomy"), files.get("fasta"),
                  rules=rules, reference=ref, simulation=simulation)
     st.session_state["report"] = report
+    st.rerun()   # judul, label SIMULASI, dan tombol ekspor ikut diperbarui
 
 
 def page_upload() -> None:
@@ -83,7 +84,7 @@ def page_upload() -> None:
         st.markdown("Tidak ada.")
     st.subheader("Sidik jari tiap berkas")
     st.dataframe(pd.DataFrame([{"berkas": f.name, "peran": f.role, "sha256": f.sha256} for f in report.project.files]),
-                 hide_index=True, use_container_width=True)
+                 hide_index=True, width="stretch")
     st.code(f"sidik jari laporan: sha256:{report.fingerprint}\nreferensi: {report.manifest['referensi']}\n"
             f"aturan: {report.manifest['aturan']}\naplikasi: {report.manifest['aplikasi']}")
 
@@ -115,7 +116,7 @@ def page_claims(report) -> None:
     cols = ["claim_id", "site_id", "danau", "taxon_lab", "taxon_dilaporkan", "tingkat", "nilai", "total",
             "label_L3", "peluang_belum_di_kamus", "penyebab", "keputusan"]
     st.caption(f"{len(view)} dari {len(c)} klaim")
-    st.dataframe(view[cols], hide_index=True, use_container_width=True)
+    st.dataframe(view[cols], hide_index=True, width="stretch")
 
 
 def page_card(report) -> None:
@@ -145,9 +146,9 @@ def page_card(report) -> None:
 
 def page_gaps(report) -> None:
     st.header("Peta celah kamus")
-    st.dataframe(gap_map(report), hide_index=True, use_container_width=True)
+    st.dataframe(gap_map(report), hide_index=True, width="stretch")
     st.subheader("Daftar prioritas barcode")
-    st.dataframe(barcode_priority(report), hide_index=True, use_container_width=True)
+    st.dataframe(barcode_priority(report), hide_index=True, width="stretch")
 
 
 def sidebar_downloads(report) -> None:

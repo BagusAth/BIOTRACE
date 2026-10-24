@@ -215,7 +215,8 @@ def main() -> None:
     print(f"6.2 Lake St. Pierre selesai ({time.perf_counter() - t0:.0f} dtk)")
     rows += li2019_rows(rules)
     pd.DataFrame(rows).to_csv(OUT / "results_v0.1.csv", index=False, lineterminator="\n")
-    (OUT / "lake_st_pierre.json").write_text(json.dumps(detail, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUT / "lake_st_pierre.json").write_text(json.dumps(detail, indent=2, ensure_ascii=False) + "\n",
+                                             encoding="utf-8", newline="\n")
     show = pd.DataFrame(rows)
     show = show[show["metrik"].isin(["n_kueri", "ambang97_nama_keliru_lolos_pct", "biotrace_nama_keliru_lolos_pct",
                                      "biotrace_nama_keliru_nilai_A_pct", "biotrace_turun_genus_atau_tidak_dikenal_pct",

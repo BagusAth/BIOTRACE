@@ -270,5 +270,6 @@ def write_outputs(report: Report, out_dir: str | Path) -> dict[str, Path]:
     summ = decision_summary(report)
     summ["waktu_proses_detik"] = round(report.seconds, 2)
     summ["sidik_jari_laporan"] = f"sha256:{report.fingerprint}"
-    paths["ringkasan"].write_text(json.dumps(summ, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    paths["ringkasan"].write_text(json.dumps(summ, indent=2, ensure_ascii=False) + "\n", encoding="utf-8",
+                                  newline="\n")
     return paths
