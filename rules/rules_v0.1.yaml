@@ -1,0 +1,117 @@
+# BioTrace Indonesia — berkas aturan berversi
+# Semua ambang dan parameter penilaian ada di sini. Mengubah satu nilai berarti
+# menaikkan nomor versi, karena versi aturan tercatat di setiap laporan (F4).
+version: "0.1"
+status: "parameter usulan PRD v2; dikalibrasi ulang di referensi Malili dan Lake St. Pierre"
+
+reference:
+  version: "v0.1"
+  dir: "data/ref/v0.1"
+  blast_db: "ref12S"
+  # aturan v0.1: "tervalidasi" bila catatan GenBank punya specimen_voucher
+  validation_rule: "specimen_voucher"
+  # Kompleks Malili dipakai sebagai wilayah peta kelengkapan; sebaran per danau
+  # masih checklist sementara yang perlu tinjauan ahli (Audit Dataset).
+  completeness_scope: "wilayah"
+
+blast:
+  max_target_seqs: 50
+  perc_identity: 80
+  qcov_hsp_perc: 80
+  outfmt: "6 qseqid sseqid pident length qcovs evalue bitscore"
+
+naming:
+  near_hit_delta_pct: 0.5        # kecocokan dalam selisih ini dihitung bersama
+  species_min_identity: 98.0     # di bawah ini tidak dilaporkan sebagai spesies
+  unknown_below_identity: 95.0   # di bawah ini "tidak dikenal"
+  marker_min_identity: 99.5      # >1 spesies dan kemiripan setinggi ini: penyebab marker, bukan referensi
+  lab_db_note: "dinilai dengan database lab"
+
+l1:
+  score2: {identity: 99.0, gap: 1.0}
+  score1: {identity: 98.0, gap: 0.5}
+  completeness_penalty_below: 0.5   # dikurangi 1 bila r/n genus di wilayah < nilai ini
+
+l2:
+  score_recorded: 1
+  score_not_recorded: 0
+
+l4:
+  replicates: 3
+  min_total_reads: 10
+  tag_jump_fraction: 0.001          # usulan; dikalibrasi dengan Li dkk. 2019
+  tag_jump_status: "belum dikalibrasi"
+  # skor L4 dari jumlah replikat positif per lokasi
+  score_by_positive: {3: 2, 2: 1, 1: 0, 0: 0}
+
+grades: {A: [5], B: [4], C: [2, 3], D: [0, 1]}
+
+caps:
+  negative_control_same_batch: "D"
+  all_reads_below_min: "D"
+
+causes:
+  reference_p_missing: 0.5
+  reference_identity_range: [95.0, 98.0]
+  sample_max_positive_replicates: 1
+
+decision:
+  labels: ["aman dilaporkan", "dengan catatan", "wajib verifikasi", "jangan dipakai"]
+  l3_trigger_labels: ["endemik", "terancam", "invasif", "kemungkinan louhan hibrida", "kemungkinan endemik di luar kamus"]
+  matrix:
+    A: {tanpa_l3: "aman dilaporkan", dengan_l3: "aman dilaporkan"}
+    B: {tanpa_l3: "aman dilaporkan", dengan_l3: "aman dilaporkan"}
+    C: {tanpa_l3: "dengan catatan", dengan_l3: "wajib verifikasi"}
+    D: {tanpa_l3: "jangan dipakai", dengan_l3: "wajib verifikasi"}
+  unknown: {default: "dengan catatan", lab_signal_problem: "jangan dipakai"}
+  follow_up:
+    aman dilaporkan: "Tulis di laporan pada tingkat nama yang tercantum."
+    dengan catatan: "Tulis di tingkat yang aman dan cek kemungkinan sumber DNA lain."
+    wajib verifikasi: "Verifikasi dengan marker kedua (COI/16S), survei tangkap, atau barcode spesimen voucher sebelum dipakai."
+    jangan dipakai: "Jangan masukkan ke laporan; tinjau batch ekstraksi dan abaikan data nyasar."
+  cause_follow_up:
+    referensi: "Laporkan di tingkat genus; masukkan ke daftar prioritas barcode."
+    marker: "Pakai marker kedua (COI atau 16S) atau survei tangkap."
+    sampel: "Tinjau batch ekstraksi; ulang PCR."
+    lokasi: "Konfirmasi dengan survei; cek kemungkinan sumber DNA lain."
+
+input:
+  required_columns:
+    reads: [asv_id, sample_id, reads]
+    taxonomy: [asv_id, taxon, rank, pct_identity, runner_up_taxon, runner_up_pct_identity, reference_db]
+    metadata: [sample_id, site_id, latitude, longitude, collection_date, sample_type, replicate, extraction_batch, marker]
+  # kamus pemetaan nama kolom lab ke istilah FAIRe/Darwin Core -> nama kolom internal
+  column_aliases:
+    sample_id: [sample_id, samp_name, sampleid, sample, materialSampleID]
+    site_id: [site_id, site, station, locality, eventID, samp_site]
+    latitude: [latitude, decimalLatitude, lat, lat_dd]
+    longitude: [longitude, decimalLongitude, lon, long, lon_dd]
+    collection_date: [collection_date, eventDate, date, sampling_date]
+    sample_type: [sample_type, samp_category, control_type]
+    replicate: [replicate, biological_rep, rep, replicate_id]
+    extraction_batch: [extraction_batch, extract_batch, batch, extraction_batch_id]
+    marker: [marker, target_gene, target_subfragment, amplicon]
+    lake: [lake, danau, waterBody, water_body]
+    region: [region, wilayah, locality_region]
+    asv_id: [asv_id, asv, ASV, otu_id, OTU, seq_id]
+    reads: [reads, count, read_count, nreads]
+    taxon: [taxon, scientificName, species, assigned_taxon]
+    rank: [rank, taxonRank, level]
+    pct_identity: [pct_identity, pident, identity, percent_identity]
+    runner_up_taxon: [runner_up_taxon, second_taxon]
+    runner_up_pct_identity: [runner_up_pct_identity, second_pident]
+    reference_db: [reference_db, ref_db, database]
+  sample_types: [sampel, kontrol_negatif_lapangan, kontrol_negatif_pcr, kontrol_positif]
+  sample_type_aliases:
+    sampel: [sampel, sample, field_sample, environmental]
+    kontrol_negatif_lapangan: [kontrol_negatif_lapangan, field_blank, negative_field, blank_lapangan]
+    kontrol_negatif_pcr: [kontrol_negatif_pcr, pcr_blank, negative_pcr, ntc, extraction_blank, kontrol_negatif]
+    kontrol_positif: [kontrol_positif, positive_control, mock]
+  latitude_range: [-90, 90]
+  longitude_range: [-180, 180]
+  # wilayah fokus MVP; koordinat di luar kotak ini dicatat sebagai peringatan, bukan galat
+  focus_bbox: {lat: [-3.2, -2.2], lon: [120.9, 121.8]}
+
+interpretation_limit:
+  id: "Deteksi DNA bukan bukti pasti ikan hidup di lokasi."
+  en: "DNA detection is not definitive proof that the fish lives at the site."

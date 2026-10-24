@@ -1,0 +1,29 @@
+# lingkungan
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# alat eksternal (BLAST+ dipasang lewat scripts/setup_blast.py)
+tools/
+
+# berkas sumber mentah: diunduh ulang lewat scripts/fetch_raw.py, SHA-256 di manifest
+data/raw/
+
+# database BLAST dibangun ulang dari FASTA yang di-commit
+*.ndb
+*.nhr
+*.nin
+*.nog
+*.nos
+*.not
+*.nsq
+*.ntf
+*.nto
+*.njs
+*.nal
+
+# keluaran proses
+out/
+*.log
+.streamlit/secrets.toml

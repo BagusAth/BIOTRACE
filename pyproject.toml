@@ -1,0 +1,17 @@
+[project]
+name = "biotrace"
+version = "0.2.0"
+description = "BioTrace Indonesia: pemeriksa nama ikan hasil eDNA dengan referensi Indonesia tervalidasi"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "biopython>=1.84",
+    "streamlit>=1.40",
+    "reportlab>=4.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
