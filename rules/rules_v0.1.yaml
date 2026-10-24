@@ -52,6 +52,10 @@ caps:
   negative_control_same_batch: "D"
   all_reads_below_min: "D"
 
+calibration:
+  # F19 (P1): galat per nilai dari uji tahap 6; kosong berarti "belum dikalibrasi"
+  error_by_grade_file: "data/test/results/galat_per_nilai.csv"
+
 causes:
   reference_p_missing: 0.5
   reference_identity_range: [95.0, 98.0]

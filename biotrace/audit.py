@@ -43,22 +43,38 @@ def audit_l4(project, rules: dict) -> pd.DataFrame:
                                                "extraction_batch"])
     samples = reads[reads["sample_type"] == "sampel"].copy()
     samples["rep_key"] = samples["replicate"].where(samples["replicate"] != "", samples["sample_id"])
+    samples["thr"] = samples["asv_id"].map(threshold).fillna(0.0)
+    samples["kept"] = samples["reads"] >= samples["thr"]
+
+    grouped = samples.groupby(["asv_id", "site_id"], sort=True)
+    agg = pd.DataFrame({
+        "total": grouped["reads"].sum(),
+        "n_rows": grouped["reads"].size(),
+        "n_kept": grouped["kept"].sum(),
+        "rep_seen": grouped["rep_key"].nunique(),
+    })
+    agg["k"] = samples[samples["kept"]].groupby(["asv_id", "site_id"])["rep_key"].nunique()
+    agg["k"] = agg["k"].fillna(0).astype(int)
+
+    # kontrol negatif yang memuat ASV di atas ambang data nyasar, per (asv, batch)
+    controls = controls.assign(thr=controls["asv_id"].map(threshold).fillna(0.0))
+    hot = controls[controls["reads"] >= controls["thr"]]
+    hot_batches: dict[str, set[str]] = {}
+    for asv, batch in zip(hot["asv_id"], hot["extraction_batch"]):
+        hot_batches.setdefault(asv, set()).add(batch)
 
     rows = []
-    for (asv, site), grp in samples.groupby(["asv_id", "site_id"], sort=True):
-        thr = threshold.get(asv, 0.0)
-        kept = grp[grp["reads"] >= thr]
-        k = int(kept["rep_key"].nunique())
+    for (asv, site), a in agg.iterrows():
+        k = int(a["k"])
         info = sites.loc[site] if site in sites.index else None
-        r = int(info["n_replikat"]) if info is not None else int(grp["rep_key"].nunique())
+        r = int(info["n_replikat"]) if info is not None else int(a["rep_seen"])
         batches = list(info["batches"]) if info is not None else []
-        total = int(grp["reads"].sum())
+        total = int(a["total"])
 
-        ctrl = controls[(controls["asv_id"] == asv) & controls["extraction_batch"].isin(batches)]
-        hot = ctrl[ctrl["reads"] >= thr]
+        hot_here = sorted(hot_batches.get(asv, set()) & set(batches))
         with_ctrl = [b for b in batches if b in control_batches]
-        if len(hot):
-            state, cb = "terkontaminasi", ", ".join(sorted(set(hot["extraction_batch"])))
+        if hot_here:
+            state, cb = "terkontaminasi", ", ".join(hot_here)
         elif with_ctrl:
             state, cb = "bersih", ", ".join(with_ctrl)
         else:
@@ -72,7 +88,7 @@ def audit_l4(project, rules: dict) -> pd.DataFrame:
         score = int(l4["score_by_positive"].get(min(k, int(l4["replicates"])), 0))
         rows.append({
             "asv_id": asv, "site_id": site, "replikat_positif": k, "replikat_total": r,
-            "total_bacaan": total, "bacaan_nyasar_dibuang": int(len(grp) - len(kept)),
+            "total_bacaan": total, "bacaan_nyasar_dibuang": int(a["n_rows"] - a["n_kept"]),
             "status_kontrol": state, "batch_kontrol": cb, "batas_D": "; ".join(caps),
             "skor_L4": score,
             "alasan_L4_id": texts.l4_reason(k, r, texts.control_text(state, cb, "id"), "id"),
@@ -126,15 +142,20 @@ def audit_claims(project, namings: dict[str, Naming], reference, rules: dict) ->
     """Gabungkan L4 per lokasi dengan L1, L2, L3 dari penamaan menjadi satu baris per klaim."""
     l4 = audit_l4(project, rules)
     sites = site_info(project).set_index("site_id")
+    lake_of = sites["lake"].to_dict()
     scope = rules["reference"].get("completeness_scope", "wilayah")
+    # takson x danau jauh lebih sedikit daripada klaim: hitung sekali per pasangan
+    memo: dict[tuple, tuple] = {}
     rows = []
     for rec in l4.to_dict("records"):
         n = namings[rec["asv_id"]]
-        lake = sites.loc[rec["site_id"], "lake"] if rec["site_id"] in sites.index else ""
-        comp = reference.completeness_for(n.genus, lake or None, scope) if n.genus else None
-        l1 = score_l1(n, comp, rules)
-        l2 = score_l2(n, reference, lake, rules)
-        labels = reference.l3_labels(n.taxon, n.rank, lake or None, near_family=n.family_hint)
+        lake = lake_of.get(rec["site_id"], "")
+        key = (rec["asv_id"], lake)
+        if key not in memo:
+            comp = reference.completeness_for(n.genus, lake or None, scope) if n.genus else None
+            memo[key] = (comp, score_l1(n, comp, rules), score_l2(n, reference, lake, rules),
+                         reference.l3_labels(n.taxon, n.rank, lake or None, near_family=n.family_hint))
+        comp, l1, l2, labels = memo[key]
         rows.append({
             "claim_id": f"{rec['asv_id']}@{rec['site_id']}",
             "asv_id": rec["asv_id"], "site_id": rec["site_id"], "danau": lake,
