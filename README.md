@@ -95,7 +95,8 @@ Baris perintah:
 
 Keluaran di `out/`: `klaim.csv` (skema keluaran PRD), `prioritas_barcode.csv`,
 `laporan.pdf` (Bahasa Indonesia), `manifest.json` (SHA-256 input, versi referensi dan aturan,
-sidik jari laporan), `ringkasan.json`.
+sidik jari laporan), `ringkasan.json`. Tambahkan `--json` untuk menulis `report.json`
+(kontrak `biotrace.report.v1` untuk dashboard) dan `--project-name` untuk nama proyek di tampilan.
 
 Uji kinerja (200 sampel, 2.000 ASV, termasuk BLAST): `scripts/benchmark.py` — sekitar 21 detik
 di laptop pengembang.

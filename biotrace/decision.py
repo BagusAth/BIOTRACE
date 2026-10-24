@@ -37,13 +37,16 @@ def decide(row: dict, rules: dict) -> tuple[str, str]:
     return decision, " ".join(unique)
 
 
-def origin(row: dict, reference, facility: str = "") -> str:
-    """Tiga kalimat dengan bahasa "kemungkinan"; tidak pernah menyebut populasi atau sungai asal."""
+def origin_parts(row: dict, reference, facility: str = "") -> dict | None:
+    """Tiga bagian asal-usul (status, jalur masuk, sumber DNA lain) dengan bahasa "kemungkinan".
+
+    Tidak pernah menyebut populasi atau sungai asal; None bila spesies tidak ada di jalur_masuk.csv.
+    """
     if row["tingkat"] not in ("spesies", "genus"):
-        return ""
+        return None
     path = reference.pathway(row["taxon_dilaporkan"])
     if not path:
-        return ""
+        return None
     lake = row.get("danau") or reference.region
     cl = reference.checklist_for(row.get("danau") or None)
     names = [path["spesies"], row["taxon_dilaporkan"]]
@@ -56,10 +59,20 @@ def origin(row: dict, reference, facility: str = "") -> str:
     else:
         status = "di luar sebaran alami yang tercatat"
     fac = facility or path.get("fasilitas_sekitar", "")
-    fac_text = f" Fasilitas di sekitar lokasi: {fac}." if fac and fac != "belum diisi pengguna" else ""
-    return (f"Status di {lake}: kemungkinan {status}. "
-            f"Jalur masuk yang tercatat: {path['jalur']}. "
-            f"Kemungkinan sumber DNA selain ikan hidup: {path.get('sumber_dna_lain', '-')}.{fac_text}")
+    return {
+        "status": f"Status di {lake}: kemungkinan {status}.",
+        "jalur": f"Jalur masuk yang tercatat: {path['jalur']}.",
+        "sumber_dna": f"Kemungkinan sumber DNA selain ikan hidup: {path.get('sumber_dna_lain', '-')}.",
+        "fasilitas": f"Fasilitas di sekitar lokasi: {fac}." if fac and fac != "belum diisi pengguna" else "",
+    }
+
+
+def origin(row: dict, reference, facility: str = "") -> str:
+    """Kalimat asal-usul untuk kolom CSV: gabungan bagian dari origin_parts()."""
+    parts = origin_parts(row, reference, facility)
+    if not parts:
+        return ""
+    return " ".join(p for p in (parts["status"], parts["jalur"], parts["sumber_dna"], parts["fasilitas"]) if p)
 
 
 def apply_decisions(claims: pd.DataFrame, reference, rules: dict, facilities: dict[str, str]) -> pd.DataFrame:

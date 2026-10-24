@@ -48,6 +48,7 @@ class Report:
     seconds: float
     simulation: bool = False
     notes: list[str] = field(default_factory=list)
+    project_name: str = ""
 
     @property
     def summary(self) -> dict:
@@ -96,8 +97,11 @@ def finalize_claims(claims: pd.DataFrame, manifest: dict) -> pd.DataFrame:
 
 def run(reads, metadata, taxonomy=None, fasta=None, rules: Rules | None = None,
         reference: Reference | None = None, mode: str = "proyek", threads: int = 1,
-        simulation: bool = False) -> Report:
-    """mode='proyek' untuk data Indonesia; mode='uji' hanya untuk referensi uji luar (F27)."""
+        simulation: bool = False, project_name: str = "") -> Report:
+    """mode='proyek' untuk data Indonesia; mode='uji' hanya untuk referensi uji luar (F27).
+
+    project_name hanya label tampilan; tidak ikut sidik jari karena bukan bagian data.
+    """
     start = time.perf_counter()
     rules = rules or load_rules()
     reference = reference or load_reference()
@@ -131,4 +135,4 @@ def run(reads, metadata, taxonomy=None, fasta=None, rules: Rules | None = None,
     fp = fingerprint(manifest, table)
     return Report(project=project, reference=reference, rules=rules, namings=namings, claims=table,
                   manifest=manifest, fingerprint=fp, seconds=time.perf_counter() - start,
-                  simulation=simulation, notes=notes)
+                  simulation=simulation, notes=notes, project_name=project_name)
