@@ -1,0 +1,5 @@
+nilai,n,keliru,galat_pct,galat
+A,39,12,30.8,"30,8% (n=39; uji tanpa-satu-spesies ref Malili v0.1)"
+B,34,4,11.8,"11,8% (n=34; uji tanpa-satu-spesies ref Malili v0.1)"
+C,135,1,0.7,"0,7% (n=135; uji tanpa-satu-spesies ref Malili v0.1)"
+D,0,0,,belum dikalibrasi (n=0)

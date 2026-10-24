@@ -159,3 +159,13 @@ def test_blast_naming_on_reference_sequence(ref, rules, tmp_path):
 def test_accession_parsing(raw, acc):
     from biotrace.naming import accession_of
     assert accession_of(raw) == acc
+
+
+def test_l4_without_any_negative_control(rules, tmp_path):
+    reads = tmp_path / "bacaan.csv"
+    reads.write_text("asv_id,sample_id,reads\na1,S1,50\na1,S2,40\n", encoding="utf-8")
+    meta = tmp_path / "metadata.csv"
+    meta.write_text("sample_id,site_id,sample_type,replicate,extraction_batch\nS1,X,sampel,1,\nS2,X,sampel,2,\n",
+                    encoding="utf-8")
+    l4 = audit_l4(load_project(reads, meta, rules=rules), rules)
+    assert l4.iloc[0]["status_kontrol"] == "tanpa_kontrol" and l4.iloc[0]["replikat_positif"] == 2

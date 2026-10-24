@@ -1,0 +1,48 @@
+sample_id,site_id,latitude,longitude,collection_date,sample_type,replicate,extraction_batch,marker,lake,region
+BAIE03_2022_ROUND1,BAIE03_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIE04_2019_ROUND1,BAIE04_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIE04_2022_ROUND2,BAIE04_2022,,,2022,sampel,ROUND2,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIE07_2022_ROUND1,BAIE07_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIE09_2019_ROUND1,BAIE09_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIE09_2022_ROUND1,BAIE09_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIENA01_2019_ROUND1,BAIENA01_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIENA01_2022_ROUND2,BAIENA01_2022,,,2022,sampel,ROUND2,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIENA03_2019_ROUND1,BAIENA03_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BAIENA03_2022_ROUND1,BAIENA03_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Baie-du-Febvre
+BART05_2022_ROUND1,BART05_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART06_2019_ROUND1,BART06_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART06_2022_ROUND1,BART06_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART07_2022_ROUND1,BART07_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART08_2019_ROUND1,BART08_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART08_2022_ROUND1,BART08_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART09_2019_ROUND1,BART09_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART09_2022_ROUND1,BART09_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART10_2019_ROUND1,BART10_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BART10_2022_ROUND1,BART10_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA01_2019_ROUND1,BARTNA01_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA01_2022_ROUND1,BARTNA01_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA02_2019_ROUND1,BARTNA02_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA02_2022_ROUND1,BARTNA02_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA04_2019_ROUND1,BARTNA04_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA04_2022_ROUND2,BARTNA04_2022,,,2022,sampel,ROUND2,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+BARTNA05_2022_ROUND1,BARTNA05_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,St-Barthélemy
+DUPA01_2019_ROUND1,DUPA01_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPA01_2022_ROUND2,DUPA01_2022,,,2022,sampel,ROUND2,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPA02_2019_ROUND1,DUPA02_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPA04_2022_ROUND1,DUPA04_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPA05_2022_ROUND1,DUPA05_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPA06_2019_ROUND1,DUPA06_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPANA01_2019_ROUND1,DUPANA01_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+DUPANA03_2019_ROUND1,DUPANA03_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Île Dupas
+PIER02_2019_ROUND1,PIER02_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER02_2022_ROUND1,PIER02_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER03_2019_ROUND1,PIER03_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER03_2022_ROUND1,PIER03_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER04_2019_ROUND1,PIER04_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER04_2022_ROUND1,PIER04_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER05_2019_ROUND1,PIER05_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIER05_2022_ROUND1,PIER05_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIERNA03_2019_ROUND1,PIERNA03_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIERNA03_2022_ROUND1,PIERNA03_2022,,,2022,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIERNA04_2019_ROUND1,PIERNA04_2019,,,2019,sampel,ROUND1,,12S MiFish-U,Lac Saint-Pierre,Pierreville
+PIERNA04_2022_ROUND2,PIERNA04_2022,,,2022,sampel,ROUND2,,12S MiFish-U,Lac Saint-Pierre,Pierreville

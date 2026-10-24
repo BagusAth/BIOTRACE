@@ -257,11 +257,13 @@ def load_reference(root: str | Path | None = None) -> Reference:
     root = Path(root) if root else ROOT / "data" / "ref" / "v0.1"
     meta = yaml.safe_load((root / "reference.yaml").read_text(encoding="utf-8"))
     taxonomy = read_csv(root / "ref12S_taksonomi.csv").set_index("aksesi", drop=False)
+    berkas = meta.get("berkas", {})   # nama berkas lain untuk referensi selain Malili
     optional = {}
     for name in ("checklist_malili.csv", "status.csv", "alias.csv", "jalur_masuk.csv", "kelengkapan.csv"):
-        p = root / meta.get("berkas", {}).get(name, name)
+        p = root / berkas.get(name, name)
         optional[name] = read_csv(p) if p.exists() else pd.DataFrame()
-    files = {name: sha256_file(root / name) for name in REFERENCE_FILES if (root / name).exists()}
+    names = [berkas.get(n, n) for n in REFERENCE_FILES]
+    files = {name: sha256_file(root / name) for name in names if (root / name).exists()}
     return Reference(
         root=root, meta=meta, taxonomy=taxonomy,
         checklist=_ensure_cols(optional["checklist_malili.csv"], ["spesies", "famili", "danau", "status"]),

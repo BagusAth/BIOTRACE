@@ -43,7 +43,7 @@ def audit_l4(project, rules: dict) -> pd.DataFrame:
                                                "extraction_batch"])
     samples = reads[reads["sample_type"] == "sampel"].copy()
     samples["rep_key"] = samples["replicate"].where(samples["replicate"] != "", samples["sample_id"])
-    samples["thr"] = samples["asv_id"].map(threshold).fillna(0.0)
+    samples["thr"] = samples["asv_id"].map(threshold).astype(float).fillna(0.0)
     samples["kept"] = samples["reads"] >= samples["thr"]
 
     grouped = samples.groupby(["asv_id", "site_id"], sort=True)
@@ -57,7 +57,7 @@ def audit_l4(project, rules: dict) -> pd.DataFrame:
     agg["k"] = agg["k"].fillna(0).astype(int)
 
     # kontrol negatif yang memuat ASV di atas ambang data nyasar, per (asv, batch)
-    controls = controls.assign(thr=controls["asv_id"].map(threshold).fillna(0.0))
+    controls = controls.assign(thr=controls["asv_id"].map(threshold).astype(float).fillna(0.0))
     hot = controls[controls["reads"] >= controls["thr"]]
     hot_batches: dict[str, set[str]] = {}
     for asv, batch in zip(hot["asv_id"], hot["extraction_batch"]):

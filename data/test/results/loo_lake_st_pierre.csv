@@ -1,0 +1,334 @@
+kueri,spesies_asli,genus_asli,kemiripan_tersisa,nama_teratas_tersisa,ambang97_memberi_nama,biotrace_nama,biotrace_tingkat,biotrace_penyebab,skor_L1,nilai,keliru,keliru_lolos_aman
+AB021901,Anguilla rostrata,Anguilla,98.246,Anguilla japonica,True,Anguilla,genus,lokasi,1,B,False,False
+AB042952,Amia calva,Amia,,,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB111951,Carassius auratus,Carassius,100.0,Carassius gibelio,True,tidak dikenal,tidak dikenal,marker; lokasi,0,-,False,False
+AB127393,Notemigonus crysoleucas,Notemigonus,97.143,Scardinius hesperidicus,True,Scardinius,genus,referensi,0,C,True,False
+AB127394,Catostomus commersonii,Catostomus,98.837,Catostomus fumeiventris,True,Catostomus,genus,lokasi,1,B,False,False
+AB188190,Cottus cognatus,Cottus,100.0,Cottus aleuticus,True,Cottus,genus,marker; lokasi,0,C,False,False
+AB218686,Tinca tinca,Tinca,92.655,Scardinius hesperidicus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB378749,Micropterus dolomieu,Micropterus,99.408,Micropterus treculii,True,Micropterus,genus,referensi; lokasi,0,C,False,False
+AB379915,Carassius auratus,Carassius,100.0,Carassius carassius,True,tidak dikenal,tidak dikenal,marker; lokasi,0,-,False,False
+AB445125,Culaea inconstans,Culaea,93.902,Gasterosteus aculeatus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB445126,Apeltes quadracus,Apeltes,92.899,Pungitius kaibarae,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB445129,Gasterosteus wheatlandi,Gasterosteus,96.951,Gasterosteus nipponicus,False,Gasterosteus,genus,referensi,0,C,False,False
+AB445130,Pungitius pungitius,Pungitius,100.0,Pungitius laevis,True,Pungitius,genus,marker; lokasi,0,C,False,False
+AF023185,Couesius plumbeus,Couesius,96.023,Scardinius graecus,False,Scardinius,genus,referensi,0,C,True,False
+AF023192,Margariscus margarita,Margariscus,95.954,Rhinichthys osculus,False,Rhinichthys,genus,referensi,0,C,True,False
+AF023194,Notemigonus crysoleucas,Notemigonus,96.571,Scardinius hesperidicus,False,Scardinius,genus,referensi,0,C,True,False
+AF023195,Notropis atherinoides,Notropis,99.432,Notropis oxyrhynchus,True,Notropis,genus,lokasi,2,A,False,False
+AF023198,Rhinichthys atratulus,Rhinichthys,100.0,Rhinichthys obtusus,True,Rhinichthys,genus,lokasi,2,A,False,False
+AF049731,Percopsis omiscomaycus,Percopsis,91.071,Percopsis transmontana,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AF081846,Exoglossum maxillingua,Exoglossum,98.266,Exoglossum laurae,True,Exoglossum,genus,lokasi,1,B,False,False
+AF118676,Noturus insignis,Noturus,98.925,Noturus sp.,True,Noturus,genus,referensi,1,B,False,False
+AF118687,Noturus gyrinus,Noturus,98.37,Noturus lachneri,True,Noturus,genus,lokasi,1,B,False,False
+AF125595,Acipenser fulvescens,Acipenser,98.889,Acipenser baerii,True,Acipenser,genus,referensi; lokasi,0,C,False,False
+AF125599,Acipenser oxyrinchus,Acipenser,97.778,Acipenser sturio,True,Acipenser,genus,referensi,0,C,False,False
+AF133701,Salmo salar,Salmo,98.235,Salmo labrax,True,Salmonidae,famili,referensi; lokasi,0,C,False,False
+AF154850,Salvelinus fontinalis,Salvelinus,100.0,Salvelinus leucomaenis,True,Salvelinus,genus,lokasi,2,A,False,False
+AF266496,Anguilla rostrata,Anguilla,98.83,Anguilla japonica,True,Anguilla,genus,lokasi,1,B,False,False
+AF333595,Catostomus catostomus,Catostomus,99.419,Catostomus bondi,True,Catostomus,genus,lokasi,2,A,False,False
+AF333596,Catostomus commersonii,Catostomus,97.674,Catostomus fumeiventris,True,Catostomus,genus,referensi,0,C,False,False
+AF333600,Moxostoma anisurum,Moxostoma,98.837,Moxostoma collapsum,True,Moxostoma,genus,lokasi,1,B,False,False
+AF333601,Moxostoma carinatum,Moxostoma,96.512,Moxostoma cervinum,False,Moxostoma,genus,referensi; lokasi,0,C,False,False
+AF392054,Oncorhynchus tshawytscha,Oncorhynchus,98.235,Oncorhynchus clarkii henshawi,True,Oncorhynchus,genus,referensi,0,C,False,False
+AF482987,Ictalurus punctatus,Ictalurus,99.415,Ictalurus furcatus,True,Ictalurus,genus,referensi; lokasi,0,C,False,False
+AJ517765,Lota lota,Lota,92.827,Microgadus proximus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AM910409,Salmo trutta,Salmo,100.0,Salmo pallaryi,True,Salmo,genus,marker; lokasi,0,C,False,False
+AM931027,Salmo salar,Salmo,97.814,Coregonus artedi,True,Salmonidae,famili,referensi,0,C,False,False
+AP002944,Gasterosteus aculeatus,Gasterosteus,100.0,Gasterosteus nipponicus,True,Gasterosteus,genus,lokasi,2,A,False,False
+AP004103,Esox lucius,Esox,98.81,Esox cisalpinus,True,Esox,genus,lokasi,1,B,False,False
+AP004356,Hiodon alosoides,Hiodon,97.159,Hiodon tergisus,True,Hiodon,genus,referensi,0,C,False,False
+AP004412,Lota lota,Lota,92.398,Microgadus proximus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AP005993,Lepomis macrochirus,Lepomis,100.0,Lepomis cyanellus,True,Lepomis cyanellus,spesies,,2,A,True,True
+AP006790,Morone americana,Morone,99.419,Morone mississippiensis,True,Morone,genus,lokasi,2,A,False,False
+AP009047,Cyprinus carpio,Cyprinus,100.0,Cyprinus megalophthalmus,True,Cyprinus,genus,lokasi,1,B,False,False
+AP009132,Alosa pseudoharengus,Alosa,99.422,Alosa aestivalis,True,Alosa aestivalis,spesies,,1,B,True,True
+AP009499,Hiodon tergisus,Hiodon,97.159,Hiodon alosoides,True,Hiodon,genus,referensi,0,C,False,False
+AP011239,Carassius auratus,Carassius,100.0,Carassius sp. 'Ginbuna',True,Carassius,genus,marker,0,C,False,False
+AP011263,Scardinius erythrophthalmus,Scardinius,98.286,Scardinius hesperidicus,True,Scardinius,genus,referensi; lokasi,0,C,False,False
+AP011278,Exoglossum maxillingua,Exoglossum,94.944,Rhinichthys osculus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AP011279,Pimephales promelas,Pimephales,96.045,Notropis rubellus,False,Leuciscidae,famili,referensi,0,C,False,False
+AP012090,Luxilus cornutus,Luxilus,100.0,Luxilus chrysocephalus,True,Luxilus,genus,lokasi,1,B,False,False
+AP012097,Notropis bifrenatus,Notropis,97.727,Pimephales tenellus,True,Pimephales,genus,referensi,0,C,True,False
+AP012101,Pimephales notatus,Pimephales,99.432,Pimephales sp. MCZuncat,True,Pimephales,genus,referensi,2,A,False,False
+AP012104,Rhinichthys atratulus,Rhinichthys,99.425,Rhinichthys obtusus,True,Rhinichthys,genus,lokasi,2,A,False,False
+AP012105,Rhinichthys cataractae,Rhinichthys,98.864,Rhinichthys osculus,True,Rhinichthys,genus,lokasi,1,B,False,False
+AP013046,Esox niger,Esox,100.0,Esox americanus vermiculatus,True,Esox,genus,lokasi,2,A,False,False
+AP013050,Prosopium cylindraceum,Prosopium,97.059,Prosopium williamsoni,True,Prosopium,genus,referensi; lokasi,0,C,False,False
+AP014537,Micropterus salmoides,Micropterus,100.0,Micropterus floridanus,True,Micropterus,genus,lokasi,2,A,False,False
+AP017363,Cyprinus carpio,Cyprinus,98.844,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+AP017364,Cyprinus carpio,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+AY216538,Hybognathus regius,Hybognathus,97.159,Hybognathus nuchalis,True,Hybognathus,genus,referensi; lokasi,0,C,False,False
+AY216553,Notropis volucellus,Notropis,99.432,Notropis texanus,True,Notropis,genus,lokasi,2,A,False,False
+AY216556,Pimephales notatus,Pimephales,100.0,Pimephales sp. MCZuncat,True,Pimephales,genus,referensi,2,A,False,False
+AY372766,Ammocrypta pellucida,Ammocrypta,97.024,Ammocrypta clara,True,Ammocrypta,genus,referensi,0,C,False,False
+AY372773,Etheostoma caeruleum,Etheostoma,99.408,Etheostoma burri,True,Etheostoma,genus,lokasi,2,A,False,False
+AY372781,Etheostoma nigrum,Etheostoma,98.214,Etheostoma olmstedi,True,Etheostoma,genus,referensi,0,C,False,False
+AY372797,Percina caprodes,Percina,100.0,Percina copelandi,True,Percina copelandi,spesies,,1,B,True,True
+AY372798,Percina copelandi,Percina,100.0,Percina caprodes,True,Percina caprodes,spesies,,1,B,True,True
+AY372812,Morone chrysops,Morone,97.093,Morone saxatilis,True,Morone,genus,referensi,0,C,False,False
+AY442347,Amia calva,Amia,,,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AY886762,Oncorhynchus clarkii,Oncorhynchus,99.412,Oncorhynchus mykiss,True,Oncorhynchus,genus,referensi,0,C,False,False
+DQ288268,Oncorhynchus mykiss,Oncorhynchus,99.412,Oncorhynchus gilae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+DQ288269,Oncorhynchus mykiss,Oncorhynchus,100.0,Oncorhynchus gilae,True,Oncorhynchus,genus,marker; lokasi,0,C,False,False
+DQ536422,Cyprinella spiloptera,Cyprinella,99.432,Cyprinella whipplei,True,Cyprinella,genus,lokasi,2,A,False,False
+DQ536423,Lepisosteus osseus,Lepisosteus,100.0,Lepisosteus oculatus,True,Lepisosteus,genus,marker; lokasi,0,C,False,False
+DQ536425,Micropterus salmoides,Micropterus,99.408,Micropterus punctulatus,True,Micropterus,genus,lokasi,1,B,False,False
+DQ536426,Dorosoma cepedianum,Dorosoma,95.977,Dorosoma petenense,False,Dorosoma,genus,referensi,0,C,False,False
+DQ536429,Notropis stramineus,Notropis,96.023,Notropis simus pecosensis,False,Notropis,genus,referensi; lokasi,0,C,False,False
+EF055889,Oncorhynchus nerka,Oncorhynchus,100.0,Oncorhynchus kawamurae,True,Oncorhynchus,genus,lokasi,1,B,False,False
+EF126369,Oncorhynchus kisutch,Oncorhynchus,99.27,Oncorhynchus keta,True,Oncorhynchus,genus,lokasi,2,A,False,False
+EU643688,Salmo salar,Salmo,97.647,Salmo labrax,True,Salmonidae,famili,referensi; lokasi,0,C,False,False
+EU643689,Salmo salar,Salmo,97.647,Salmo labrax,True,Salmonidae,famili,referensi; lokasi,0,C,False,False
+GU233801,Salmo trutta,Salmo,100.0,Salmo caspius,True,Salmo,genus,marker; lokasi,0,C,False,False
+HM106493,Osmerus mordax,Osmerus,98.81,Osmerus eperlanus,True,Osmerus,genus,lokasi,1,B,False,False
+HM447585,Morone saxatilis,Morone,97.093,Morone chrysops,True,Morone,genus,referensi,0,C,False,False
+HQ167664,Oncorhynchus mykiss,Oncorhynchus,99.412,Oncorhynchus gilae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+HQ331537,Alosa sapidissima,Alosa,100.0,Alosa alosa,True,Alosa,genus,marker; lokasi,0,C,False,False
+HQ391896,Micropterus salmoides,Micropterus,100.0,Micropterus punctulatus,True,Micropterus,genus,lokasi,2,A,False,False
+HQ875340,Carassius auratus,Carassius,98.844,Carassius gibelio,True,tidak dikenal,tidak dikenal,referensi; lokasi,0,-,False,False
+JF912030,Lepisosteus osseus,Lepisosteus,98.883,Lepisosteus oculatus,True,Lepisosteus,genus,lokasi,1,B,False,False
+JF912032,Lepisosteus osseus,Lepisosteus,96.667,Lepisosteus platostomus,False,Lepisosteus,genus,referensi; lokasi,0,C,False,False
+JF912036,Lepisosteus osseus,Lepisosteus,99.444,Lepisosteus platostomus,True,Lepisosteus,genus,lokasi,2,A,False,False
+JN015534,Noturus gyrinus,Noturus,95.882,Noturus sp.,False,Noturus,genus,referensi,0,C,False,False
+JQ390055,Salmo salar,Salmo,97.647,Salvelinus alpinus,True,Salvelinus,genus,referensi; lokasi,0,C,True,False
+JQ390060,Coregonus clupeaformis,Coregonus,99.412,Coregonus lavaretus,True,Coregonus,genus,referensi; lokasi,0,C,False,False
+JQ661482,Coregonus clupeaformis,Coregonus,100.0,Coregonus lavaretus,True,Coregonus,genus,marker; lokasi,0,C,False,False
+JQ661487,Coregonus clupeaformis,Coregonus,99.412,Coregonus lavaretus,True,Coregonus,genus,referensi; lokasi,0,C,False,False
+JX188254,Cyprinus carpio,Cyprinus,99.422,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+JX629442,Perca flavescens,Perca,100.0,Perca sp. BD-2002,True,Perca,genus,referensi,2,A,False,False
+JX899750,Ameiurus nebulosus,Ameiurus,100.0,Ameiurus natalis,True,Ameiurus natalis,spesies,,1,B,True,True
+KC427094,Lepomis cyanellus,Lepomis,98.817,Lepomis symmetricus,True,Lepomis,genus,lokasi,1,B,False,False
+KC663435,Sander canadensis,Sander,100.0,Sander lucioperca,True,Sander,genus,lokasi,1,B,False,False
+KJ564271,Anguilla rostrata,Anguilla,100.0,Anguilla anguilla,True,Anguilla,genus,lokasi,2,A,False,False
+KM057993,Cottus bairdii,Cottus,100.0,Cottus cognatus,True,Cottus,genus,marker,0,C,False,False
+KM267716,Ichthyomyzon fossor,Ichthyomyzon,100.0,Ichthyomyzon unicuspis,True,Ichthyomyzon unicuspis,spesies,,2,A,True,True
+KM267717,Ichthyomyzon unicuspis,Ichthyomyzon,100.0,Ichthyomyzon fossor,True,Ichthyomyzon fossor,spesies,,2,A,True,True
+KM282391,Acipenser oxyrinchus,Acipenser,98.024,Acipenser sturio,True,Acipenser,genus,referensi; lokasi,0,C,False,False
+KM282392,Acipenser oxyrinchus,Acipenser,97.628,Acipenser sturio,True,Acipenser,genus,referensi; lokasi,0,C,False,False
+KM282394,Ambloplites rupestris,Ambloplites,100.0,Ambloplites ariommus,True,Ambloplites,genus,lokasi,2,A,False,False
+KM282400,Catostomus commersonii,Catostomus,99.184,Catostomus fumeiventris,True,Catostomus,genus,referensi; lokasi,0,C,False,False
+KM282401,Cottus bairdii,Cottus,99.587,Cottus cognatus,True,Cottus cognatus,spesies,,1,B,True,True
+KM282406,Cyprinus carpio,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+KM282409,Etheostoma caeruleum,Etheostoma,98.76,Etheostoma burri,True,Etheostoma,genus,referensi; lokasi,0,C,False,False
+KM282411,Etheostoma exile,Etheostoma,100.0,Etheostoma microperca,True,Etheostoma,genus,lokasi,2,A,False,False
+KM282412,Etheostoma nigrum,Etheostoma,100.0,Etheostoma olmstedi,True,Etheostoma olmstedi,spesies,,2,A,True,True
+KM282418,Gasterosteus aculeatus,Gasterosteus,99.174,Gasterosteus gymnurus,True,Gasterosteus,genus,lokasi,1,B,False,False
+KM282423,Lepomis cyanellus,Lepomis,99.167,Lepomis symmetricus,True,Lepomis,genus,lokasi,2,A,False,False
+KM282424,Lepomis gibbosus,Lepomis,100.0,Lepomis macrochirus,True,Lepomis,genus,marker,0,C,False,False
+KM282426,Lepomis macrochirus,Lepomis,99.585,Lepomis cyanellus,True,Lepomis cyanellus,spesies,,2,A,True,True
+KM282429,Micropterus dolomieu,Micropterus,99.578,Micropterus punctulatus,True,Micropterus,genus,lokasi,2,A,False,False
+KM282430,Micropterus salmoides,Micropterus,100.0,Micropterus punctulatus,True,Micropterus,genus,lokasi,2,A,False,False
+KM282432,Notemigonus crysoleucas,Notemigonus,96.787,Scardinius hesperidicus,False,Scardinius,genus,referensi; lokasi,0,C,True,False
+KM282434,Notropis heterodon,Notropis,96.8,Notropis buchanani,False,Leuciscidae,famili,referensi; lokasi,0,C,False,False
+KM282437,Oncorhynchus clarkii,Oncorhynchus,99.177,Oncorhynchus mykiss,True,Oncorhynchus,genus,referensi,0,C,False,False
+KM282438,Oncorhynchus clarkii,Oncorhynchus,99.177,Oncorhynchus mykiss,True,Oncorhynchus,genus,referensi,0,C,False,False
+KM282440,Oncorhynchus kisutch,Oncorhynchus,98.765,Oncorhynchus keta,True,Oncorhynchus,genus,lokasi,1,B,False,False
+KM282441,Oncorhynchus mykiss,Oncorhynchus,100.0,Oncorhynchus gilae,True,Oncorhynchus,genus,marker; lokasi,0,C,False,False
+KM282442,Oncorhynchus tshawytscha,Oncorhynchus,97.942,Oncorhynchus nerka,True,Oncorhynchus,genus,referensi,0,C,False,False
+KM282443,Perca flavescens,Perca,100.0,Perca sp. BD-2002,True,Perca,genus,referensi,2,A,False,False
+KM282445,Pimephales promelas,Pimephales,97.2,Rhinichthys osculus,True,Rhinichthys,genus,referensi; lokasi,0,C,True,False
+KM282446,Pomoxis nigromaculatus,Pomoxis,100.0,Pomoxis annularis,True,Pomoxis,genus,lokasi,2,A,False,False
+KM282448,Salmo trutta,Salmo,100.0,Salmo pallaryi,True,Salmo,genus,marker; lokasi,0,C,False,False
+KM282453,Umbra limi,Umbra,99.587,Umbra pygmaea,True,Umbra,genus,lokasi,2,A,False,False
+KM370981,Lepomis megalotis,Lepomis,98.16,Lepomis macrochirus,True,Lepomis macrochirus,spesies,,1,B,True,True
+KM657132,Carassius auratus,Carassius,99.422,Carassius langsdorfii,True,tidak dikenal,tidak dikenal,referensi; lokasi,0,-,False,False
+KP013095,Umbra limi,Umbra,100.0,Umbra pygmaea,True,Umbra,genus,lokasi,2,A,False,False
+KP013097,Lepomis gibbosus,Lepomis,100.0,Lepomis macrochirus,True,Lepomis,genus,marker,0,C,False,False
+KP013098,Sander vitreus,Sander,94.118,Sander canadensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KP013107,Oncorhynchus clarkii,Oncorhynchus,98.824,Oncorhynchus mykiss,True,Oncorhynchus mykiss,spesies,,1,B,True,True
+KP013112,Pomoxis nigromaculatus,Pomoxis,100.0,Pomoxis annularis,True,Pomoxis,genus,lokasi,2,A,False,False
+KP013114,Catostomus commersonii,Catostomus,99.419,Catostomus fumeiventris,True,Catostomus,genus,lokasi,2,A,False,False
+KP668853,Oncorhynchus mykiss,Oncorhynchus,99.408,Oncorhynchus gilae apache,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+KP668854,Oncorhynchus mykiss,Oncorhynchus,100.0,Oncorhynchus gilae apache,True,Oncorhynchus,genus,marker; lokasi,0,C,False,False
+KT211421,Sander vitreus,Sander,93.529,Sander canadensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KT211424,Sander vitreus,Sander,93.529,Sander canadensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KT211477,Sander canadensis,Sander,95.804,Sander lucioperca,False,Sander,genus,referensi,0,C,False,False
+KT278765,Pimephales promelas,Pimephales,96.023,Notropis volucellus,False,Notropis,genus,referensi,0,C,True,False
+KT289925,Pimephales promelas,Pimephales,96.61,Notropis rubellus,False,Leuciscidae,famili,referensi,0,C,False,False
+KT289926,Etheostoma nigrum,Etheostoma,100.0,Etheostoma olmstedi,True,Etheostoma olmstedi,spesies,,2,A,True,True
+KY660677,Ambloplites rupestris,Ambloplites,100.0,Ambloplites ariommus,True,Ambloplites,genus,lokasi,2,A,False,False
+KY660678,Etheostoma caeruleum,Etheostoma,98.817,Etheostoma burri,True,Etheostoma,genus,lokasi,1,B,False,False
+LC021007,Osmerus mordax,Osmerus,97.619,Osmerus eperlanus,True,Osmerus,genus,referensi,0,C,False,False
+LC021015,Esox masquinongy,Esox,93.827,Esox reichertii,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC069402,Carassius auratus,Carassius,99.422,Carassius langsdorfii,True,Cyprinidae,famili,referensi; lokasi,0,C,False,False
+LC091624,Oncorhynchus clarkii,Oncorhynchus,98.824,Oncorhynchus mykiss,True,Oncorhynchus,genus,referensi,0,C,False,False
+LC091630,Oncorhynchus nerka,Oncorhynchus,100.0,Oncorhynchus keta,True,Oncorhynchus,genus,lokasi,2,A,False,False
+LC091631,Oncorhynchus mykiss,Oncorhynchus,99.412,Oncorhynchus gilae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+LC091871,Labidesthes sicculus,Labidesthes,82.635,Etheostoma histrio,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC091881,Gasterosteus aculeatus,Gasterosteus,100.0,Gasterosteus gymnurus,True,Gasterosteus,genus,lokasi,2,A,False,False
+LC146348,Carassius auratus,Carassius,99.422,Carassius langsdorfii,True,Carassius,genus,referensi; lokasi,0,C,False,False
+LC193240,Salvelinus namaycush,Salvelinus,99.412,Salvelinus alpinus,True,Salvelinus,genus,referensi; lokasi,0,C,False,False
+LC193249,Gasterosteus aculeatus,Gasterosteus,98.225,Gasterosteus nipponicus,True,Gasterosteus,genus,lokasi,1,B,False,False
+LC277930,Lepomis macrochirus,Lepomis,99.405,Lepomis cyanellus,True,Lepomis cyanellus,spesies,,2,A,True,True
+LC340053,Oncorhynchus nerka,Oncorhynchus,99.412,Oncorhynchus kawamurae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+LC340054,Salmo trutta,Salmo,100.0,Salmo labrax,True,Salmo,genus,marker; lokasi,0,C,False,False
+LC340060,Percopsis omiscomaycus,Percopsis,91.667,Percopsis transmontana,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC340162,Etheostoma nigrum,Etheostoma,100.0,Etheostoma blennioides,True,Etheostoma,genus,lokasi,2,A,False,False
+LC385323,Petromyzon marinus,Petromyzon,93.258,Ichthyomyzon fossor,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC468871,Carassius auratus,Carassius,100.0,Carassius langsdorfii,True,Carassius,genus,marker; lokasi,0,C,False,False
+LC601885,Gasterosteus aculeatus,Gasterosteus,99.408,Gasterosteus nipponicus,True,Gasterosteus,genus,lokasi,2,A,False,False
+LC601886,Gasterosteus aculeatus,Gasterosteus,99.408,Gasterosteus nipponicus,True,Gasterosteus,genus,lokasi,2,A,False,False
+LC782346,Lepomis megalotis,Lepomis,97.546,Lepomis macrochirus,True,Lepomis,genus,referensi,0,C,False,False
+LC795716,Carassius auratus,Carassius,100.0,Carassius langsdorfii,True,Carassius,genus,marker; lokasi,0,C,False,False
+LC795717,Carassius auratus,Carassius,99.435,Carassius langsdorfii,True,Carassius,genus,referensi; lokasi,0,C,False,False
+LC795718,Carassius auratus,Carassius,100.0,Carassius langsdorfii,True,Carassius,genus,lokasi,1,B,False,False
+LC850847,Carassius auratus,Carassius,99.422,Carassius langsdorfii,True,tidak dikenal,tidak dikenal,referensi; lokasi,0,-,False,False
+MF621710,Micropterus dolomieu,Micropterus,100.0,Micropterus treculii,True,Micropterus,genus,marker; lokasi,0,C,False,False
+MF621712,Lepomis macrochirus,Lepomis,98.81,Lepomis cyanellus,True,Lepomis cyanellus,spesies,,1,B,True,True
+MF621716,Ictalurus punctatus,Ictalurus,99.412,Ictalurus pricei,True,Ictalurus,genus,lokasi,1,B,False,False
+MF621724,Lepomis gibbosus,Lepomis,100.0,Lepomis macrochirus,True,Lepomis,genus,marker,0,C,False,False
+MF621735,Ameiurus natalis,Ameiurus,96.512,Ameiurus nebulosus,False,Ameiurus,genus,referensi,0,C,False,False
+MF621765,Coregonus artedi,Coregonus,100.0,Coregonus laurettae,True,Coregonus,genus,marker; lokasi,0,C,False,False
+MG570413,Notropis heterolepis,Notropis,99.422,Luxilus chrysocephalus,True,Luxilus,genus,referensi; lokasi,0,C,True,False
+MG570441,Catostomus catostomus,Catostomus,100.0,Catostomus bondi,True,Catostomus,genus,lokasi,2,A,False,False
+MG570443,Notropis hudsonius,Notropis,96.023,Notropis chrosomus,False,Notropis,genus,referensi,0,C,False,False
+MG570444,Rhinichthys atratulus,Rhinichthys,97.727,Rhinichthys obtusus,True,Rhinichthys,genus,referensi; lokasi,0,C,False,False
+MG570451,Notropis bifrenatus,Notropis,98.295,Pimephales tenellus,True,Pimephales,genus,lokasi,1,B,True,False
+MG570455,Notropis atherinoides,Notropis,100.0,Notropis oxyrhynchus,True,Notropis,genus,lokasi,2,A,False,False
+MG570463,Alosa aestivalis,Alosa,99.422,Alosa pseudoharengus,True,Alosa pseudoharengus,spesies,,1,B,True,True
+MG599474,Aplodinotus grunniens,Aplodinotus,86.747,Sander vitreus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MG924473,Notropis hudsonius,Notropis,95.455,Notropis chrosomus,False,Notropis,genus,referensi,0,C,False,False
+MG924474,Cottus ricei,Cottus,100.0,Cottus metae,True,Cottus,genus,lokasi,1,B,False,False
+MH301055,Coregonus artedi,Coregonus,99.412,Coregonus laurettae,True,Coregonus,genus,referensi; lokasi,0,C,False,False
+MH301059,Etheostoma flabellare,Etheostoma,92.593,Etheostoma sagitta,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MH324419,Pomoxis nigromaculatus,Pomoxis,97.794,Ambloplites ariommus,True,Ambloplites,genus,referensi,0,C,True,False
+MH918115,Tinca tinca,Tinca,92.655,Scardinius hesperidicus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MH918122,Esox lucius,Esox,99.405,Esox cisalpinus,True,Esox,genus,lokasi,2,A,False,False
+MN844101,Salmo trutta,Salmo,100.0,Salmo labrax,True,Salmo,genus,marker; lokasi,0,C,False,False
+MN844116,Neogobius melanostomus,Neogobius,94.326,Neogobius fluviatilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MN853162,Sander vitreus,Sander,92.941,Sander canadensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MT667241,Morone americana,Morone,98.837,Morone mississippiensis,True,Morone,genus,lokasi,1,B,False,False
+MT667246,Morone americana,Morone,98.837,Morone mississippiensis,True,Morone,genus,lokasi,1,B,False,False
+MT667255,Semotilus corporalis,Semotilus,90.286,Phoxinus septimaniae,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MT789706,Salmo trutta,Salmo,98.824,Salmo caspius,True,Salmo,genus,referensi; lokasi,0,C,False,False
+MW086771,Oncorhynchus mykiss,Oncorhynchus,100.0,Oncorhynchus gilae,True,Oncorhynchus,genus,marker; lokasi,0,C,False,False
+MW086777,Oncorhynchus tshawytscha,Oncorhynchus,98.649,Oncorhynchus kisutch,True,Oncorhynchus kisutch,spesies,,1,B,True,True
+MW300343,Oncorhynchus clarkii,Oncorhynchus,98.235,Oncorhynchus mykiss,True,Oncorhynchus mykiss,spesies,,1,B,True,True
+MW630143,Lepomis macrochirus,Lepomis,95.833,Lepomis humilis,False,Lepomis,genus,referensi; lokasi,0,C,False,False
+MW632105,Salmo trutta,Salmo,98.824,Salmo pallaryi,True,Salmo,genus,referensi; lokasi,0,C,False,False
+MW632109,Salmo trutta,Salmo,99.412,Salmo pallaryi,True,Salmo,genus,referensi; lokasi,0,C,False,False
+MW632112,Salmo trutta,Salmo,99.412,Salmo pallaryi,True,Salmo,genus,referensi; lokasi,0,C,False,False
+MW652797,Cyprinus carpio,Cyprinus,99.422,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+MW856839,Etheostoma caeruleum,Etheostoma,98.225,Etheostoma burri,True,Etheostoma,genus,lokasi,1,B,False,False
+MW856850,Percina copelandi,Percina,100.0,Percina bimaculata,True,Percina,genus,marker; lokasi,0,C,False,False
+MW856858,Carpiodes cyprinus,Carpiodes,100.0,Carpiodes carpio,True,Carpiodes,genus,marker; lokasi,0,C,False,False
+MW856875,Percina caprodes,Percina,100.0,Percina bimaculata,True,Percina,genus,marker; lokasi,0,C,False,False
+MW856876,Moxostoma macrolepidotum,Moxostoma,100.0,Moxostoma pisolabrum,True,Moxostoma,genus,lokasi,1,B,False,False
+MW856877,Etheostoma nigrum,Etheostoma,98.214,Etheostoma olmstedi,True,Etheostoma olmstedi,spesies,,1,B,True,True
+MW856879,Labidesthes sicculus,Labidesthes,84.146,Micropterus dolomieu,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MW856880,Moxostoma anisurum,Moxostoma,100.0,Moxostoma collapsum,True,Moxostoma,genus,lokasi,2,A,False,False
+MW856882,Notropis volucellus,Notropis,99.432,Notropis buchanani,True,Notropis,genus,lokasi,2,A,False,False
+MW856913,Etheostoma olmstedi,Etheostoma,97.633,Etheostoma vitreum,True,Etheostoma,genus,referensi,0,C,False,False
+MZ827011,Anguilla rostrata,Anguilla,98.995,Anguilla japonica,True,Anguilla,genus,lokasi,1,B,False,False
+MZ827012,Anguilla rostrata,Anguilla,98.5,Anguilla japonica,True,Anguilla,genus,referensi; lokasi,0,C,False,False
+MZ827013,Lepisosteus osseus,Lepisosteus,99.522,Lepisosteus platostomus,True,Lepisosteus,genus,lokasi,2,A,False,False
+MZ827014,Lepisosteus osseus,Lepisosteus,100.0,Lepisosteus platostomus,True,Lepisosteus,genus,lokasi,2,A,False,False
+MZ827015,Lepisosteus osseus,Lepisosteus,100.0,Lepisosteus platostomus,True,Lepisosteus,genus,lokasi,2,A,False,False
+MZ827016,Neogobius melanostomus,Neogobius,93.909,Neogobius fluviatilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MZ827017,Neogobius melanostomus,Neogobius,93.97,Neogobius fluviatilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MZ827018,Neogobius melanostomus,Neogobius,93.939,Neogobius fluviatilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MZ827019,Percina caprodes,Percina,99.49,Percina bimaculata,True,Percina,genus,referensi; lokasi,0,C,False,False
+MZ827020,Percina caprodes,Percina,99.492,Percina bimaculata,True,Percina,genus,referensi; lokasi,0,C,False,False
+MZ827021,Percina caprodes,Percina,100.0,Percina bimaculata,True,Percina,genus,marker; lokasi,0,C,False,False
+MZ827022,Moxostoma valenciennesi,Moxostoma,99.005,Moxostoma macrolepidotum,True,Moxostoma,genus,referensi,0,C,False,False
+MZ827023,Moxostoma valenciennesi,Moxostoma,99.497,Moxostoma macrolepidotum,True,Moxostoma,genus,referensi,0,C,False,False
+MZ827024,Moxostoma valenciennesi,Moxostoma,99.502,Moxostoma macrolepidotum,True,Moxostoma,genus,marker,0,C,False,False
+MZ827025,Labidesthes sicculus,Labidesthes,85.93,Lepomis gibbosus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MZ827027,Labidesthes sicculus,Labidesthes,85.93,Lepomis gibbosus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+NC_052757,Neogobius melanostomus,Neogobius,84.94,Micropterus dolomieu,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+NC_080906,Notropis volucellus,Notropis,99.432,Notropis girardi,True,Notropis,genus,referensi; lokasi,0,C,False,False
+OK172579,Microgadus tomcod,Microgadus,98.235,Microgadus proximus,True,Microgadus,genus,lokasi,1,B,False,False
+OK336456,Rhinichthys cataractae,Rhinichthys,98.864,Rhinichthys osculus,True,Rhinichthys,genus,lokasi,1,B,False,False
+OK336457,Oncorhynchus mykiss,Oncorhynchus,99.412,Oncorhynchus gilae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+OK583901,Micropterus dolomieu,Micropterus,99.408,Micropterus treculii,True,Micropterus,genus,referensi; lokasi,0,C,False,False
+OK623662,Oncorhynchus clarkii,Oncorhynchus,100.0,Oncorhynchus mykiss,True,Oncorhynchus,genus,marker,0,C,False,False
+OK623674,Rhinichthys cataractae,Rhinichthys,98.295,Rhinichthys osculus,True,Rhinichthys,genus,lokasi,1,B,False,False
+OL404932,Rhinichthys cataractae,Rhinichthys,99.432,Rhinichthys osculus,True,Rhinichthys,genus,lokasi,1,B,False,False
+OL435152,Lepomis macrochirus,Lepomis,100.0,Lepomis gibbosus,True,Lepomis,genus,marker,0,C,False,False
+OL457394,Oncorhynchus tshawytscha,Oncorhynchus,98.182,Salvelinus leucomaenis,True,Salvelinus,genus,lokasi,1,B,True,False
+OL457396,Lepomis macrochirus,Lepomis,100.0,Lepomis gibbosus,True,Lepomis,genus,marker,0,C,False,False
+OL457399,Lepomis cyanellus,Lepomis,100.0,Lepomis macrochirus,True,Lepomis macrochirus,spesies,,2,A,True,True
+OL457413,Ameiurus natalis,Ameiurus,100.0,Ameiurus nebulosus,True,Ameiurus nebulosus,spesies,,1,B,True,True
+OL693869,Rhinichthys cataractae,Rhinichthys,99.432,Rhinichthys osculus,True,Rhinichthys,genus,lokasi,2,A,False,False
+OL806597,Ameiurus nebulosus,Ameiurus,100.0,Ameiurus melas,True,Ameiurus,genus,lokasi,1,B,False,False
+OL878366,Carpiodes cyprinus,Carpiodes,98.837,Carpiodes carpio,True,Carpiodes,genus,referensi; lokasi,0,C,False,False
+OM718772,Pimephales notatus,Pimephales,97.701,Pimephales tenellus,True,Leuciscidae,famili,referensi; lokasi,0,C,False,False
+OM736786,Catostomus catostomus,Catostomus,98.837,Catostomus bondi,True,Catostomus,genus,lokasi,1,B,False,False
+OM736884,Semotilus atromaculatus,Semotilus,94.828,Semotilus thoreauianus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OM743017,Pimephales notatus,Pimephales,98.276,Pimephales tenellus,True,Leuciscidae,famili,referensi; lokasi,0,C,False,False
+OP161449,Hybognathus regius,Hybognathus,97.727,Hybognathus nuchalis,True,Hybognathus,genus,referensi; lokasi,0,C,False,False
+OP161450,Notropis rubellus,Notropis,100.0,Notropis percobromus,True,Notropis,genus,lokasi,2,A,False,False
+OP161457,Noturus insignis,Noturus,92.398,Noturus exilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OP161458,Semotilus corporalis,Semotilus,90.805,Phoxinus septimaniae,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OP422372,Notemigonus crysoleucas,Notemigonus,97.143,Scardinius hesperidicus,True,Scardinius,genus,referensi,0,C,True,False
+OP422374,Notemigonus crysoleucas,Notemigonus,96.571,Scardinius hesperidicus,False,Scardinius,genus,referensi,0,C,True,False
+OP547324,Lota lota,Lota,97.315,Microgadus proximus,True,Microgadus,genus,referensi,0,C,True,False
+OP882668,Oncorhynchus mykiss,Oncorhynchus,99.415,Oncorhynchus gilae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+OQ198765,Dorosoma cepedianum,Dorosoma,94.828,Dorosoma petenense,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OQ198766,Dorosoma cepedianum,Dorosoma,95.402,Dorosoma petenense,False,Dorosoma,genus,referensi,0,C,False,False
+OQ198772,Dorosoma cepedianum,Dorosoma,96.244,Dorosoma petenense,False,Dorosoma,genus,referensi,0,C,False,False
+OQ198779,Lepomis megalotis,Lepomis,98.235,Lepomis marginatus,True,Lepomis,genus,referensi; lokasi,0,C,False,False
+OQ198782,Lepomis macrochirus,Lepomis,98.214,Lepomis cyanellus,True,Lepomis cyanellus,spesies,,1,B,True,True
+OQ198783,Lepomis macrochirus,Lepomis,98.214,Lepomis cyanellus,True,Lepomis cyanellus,spesies,,1,B,True,True
+OQ225250,Scardinius erythrophthalmus,Scardinius,97.714,Scardinius hesperidicus,True,Scardinius,genus,referensi; lokasi,0,C,False,False
+OQ679414,Notropis volucellus,Notropis,100.0,Notropis buchanani,True,Notropis,genus,lokasi,2,A,False,False
+OQ679415,Notropis rubellus,Notropis,99.432,Notropis percobromus,True,Notropis,genus,lokasi,2,A,False,False
+OQ681474,Cyprinus carpio,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+OQ681498,Micropterus salmoides,Micropterus,100.0,Micropterus punctulatus,True,Micropterus,genus,lokasi,2,A,False,False
+OQ793762,Gasterosteus aculeatus,Gasterosteus,99.408,Gasterosteus gymnurus,True,Gasterosteus,genus,lokasi,2,A,False,False
+OR094982,Lepisosteus osseus,Lepisosteus,100.0,Lepisosteus platostomus,True,Lepisosteus,genus,lokasi,2,A,False,False
+OR094987,Lepomis gibbosus,Lepomis,99.408,Lepomis macrochirus,True,Lepomis,genus,referensi,0,C,False,False
+OR094988,Moxostoma valenciennesi,Moxostoma,98.256,Moxostoma duquesnii,True,Moxostoma,genus,lokasi,1,B,False,False
+OR379375,Lepomis gibbosus,Lepomis,99.408,Lepomis macrochirus,True,Lepomis,genus,referensi,0,C,False,False
+OR379379,Fundulus diaphanus,Fundulus,99.405,Fundulus sp.,True,Fundulus,genus,referensi,2,A,False,False
+OR379395,Lepomis gibbosus,Lepomis,99.408,Lepomis macrochirus,True,Lepomis,genus,referensi,0,C,False,False
+OR379397,Fundulus heteroclitus,Fundulus,97.024,Fundulus pulvereus,True,Fundulus,genus,referensi,0,C,False,False
+OR379439,Notemigonus crysoleucas,Notemigonus,96.571,Scardinius hesperidicus,False,Scardinius,genus,referensi,0,C,True,False
+OR379442,Notropis hudsonius,Notropis,96.591,Notropis bifrenatus,False,Notropis,genus,referensi,0,C,False,False
+OR379457,Alosa pseudoharengus,Alosa,98.844,Alosa alosa,True,Alosa,genus,referensi; lokasi,0,C,False,False
+OR379458,Alosa pseudoharengus,Alosa,98.844,Alosa aestivalis,True,Alosa aestivalis,spesies,,1,B,True,True
+OR379463,Alosa pseudoharengus,Alosa,98.844,Alosa aestivalis,True,Alosa aestivalis,spesies,,1,B,True,True
+OR379468,Fundulus diaphanus,Fundulus,98.81,Fundulus sp.,True,Fundulus,genus,referensi,1,B,False,False
+OR379510,Anguilla rostrata,Anguilla,98.817,Anguilla bicolor,True,Anguilla,genus,referensi; lokasi,0,C,False,False
+OR379534,Rhinichthys atratulus,Rhinichthys,99.432,Rhinichthys obtusus,True,Rhinichthys,genus,lokasi,2,A,False,False
+OR379536,Rhinichthys atratulus,Rhinichthys,98.864,Rhinichthys obtusus,True,Rhinichthys,genus,lokasi,1,B,False,False
+OR379544,Etheostoma olmstedi,Etheostoma,98.214,Etheostoma vitreum,True,Etheostoma,genus,lokasi,1,B,False,False
+OR379618,Noturus insignis,Noturus,91.813,Noturus exilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OR379622,Petromyzon marinus,Petromyzon,92.697,Ichthyomyzon fossor,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OR379624,Cyprinella spiloptera,Cyprinella,100.0,Cyprinella whipplei,True,Cyprinella,genus,lokasi,2,A,False,False
+OR379650,Lepisosteus osseus,Lepisosteus,99.444,Lepisosteus platostomus,True,Lepisosteus,genus,lokasi,2,A,False,False
+OR379651,Carpiodes cyprinus,Carpiodes,99.419,Carpiodes carpio,True,Carpiodes,genus,referensi; lokasi,0,C,False,False
+OR379847,Moxostoma macrolepidotum,Moxostoma,99.419,Moxostoma pisolabrum,True,Moxostoma,genus,lokasi,1,B,False,False
+OR380104,Micropterus salmoides,Micropterus,98.817,Micropterus punctulatus,True,Micropterus,genus,lokasi,1,B,False,False
+OR380158,Rhinichthys atratulus,Rhinichthys,97.159,Rhinichthys obtusus,True,Rhinichthys,genus,referensi; lokasi,0,C,False,False
+OR380274,Lepomis megalotis,Lepomis,98.16,Lepomis macrochirus,True,Lepomis macrochirus,spesies,,1,B,True,True
+OR380310,Amia calva,Amia,,,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OR380512,Etheostoma olmstedi,Etheostoma,98.81,Etheostoma vitreum,True,Etheostoma,genus,lokasi,1,B,False,False
+OR552021,Cyprinella spiloptera,Cyprinella,100.0,Cyprinella whipplei,True,Cyprinella,genus,lokasi,2,A,False,False
+OR552051,Etheostoma caeruleum,Etheostoma,100.0,Etheostoma burri,True,Etheostoma,genus,lokasi,2,A,False,False
+OR552068,Etheostoma flabellare,Etheostoma,94.643,Etheostoma sp. RA01,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OR552089,Sander vitreus,Sander,92.727,Sander canadensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OR818174,Myoxocephalus thompsonii,Myoxocephalus,100.0,Myoxocephalus scorpius,True,Myoxocephalus,genus,marker; lokasi,0,C,False,False
+OR818176,Coregonus clupeaformis,Coregonus,99.412,Coregonus lavaretus,True,Coregonus,genus,referensi; lokasi,0,C,False,False
+OR818178,Cottus ricei,Cottus,99.412,Cottus metae,True,Cottus,genus,lokasi,1,B,False,False
+PP118434,Cyprinus carpio,Cyprinus,100.0,Carassius auratus auratus,True,Carassius,genus,marker,0,C,True,False
+PP411914,Gasterosteus aculeatus,Gasterosteus,99.408,Gasterosteus gymnurus,True,Gasterosteus,genus,lokasi,2,A,False,False
+PP515694,Carassius auratus,Carassius,100.0,Carassius carassius,True,tidak dikenal,tidak dikenal,marker; lokasi,0,-,False,False
+PQ064518,Carpiodes cyprinus,Carpiodes,99.419,Carpiodes carpio,True,Carpiodes,genus,referensi; lokasi,0,C,False,False
+PQ284202,Oncorhynchus mykiss,Oncorhynchus,99.412,Oncorhynchus gilae,True,Oncorhynchus,genus,referensi; lokasi,0,C,False,False
+PQ284208,Salmo salar,Salmo,98.824,Salmo labrax,True,Salmo,genus,referensi; lokasi,0,C,False,False
+PV029268,Neogobius melanostomus,Neogobius,93.529,Neogobius fluviatilis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PV034394,Ameiurus natalis,Ameiurus,96.45,Ameiurus nebulosus,False,Ameiurus,genus,referensi,0,C,False,False
+PV364858,Notropis heterodon,Notropis,86.905,Ameiurus melas,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PV364860,Microgadus tomcod,Microgadus,98.235,Microgadus proximus,True,Microgadus,genus,lokasi,1,B,False,False
+PV369175,Rhinichthys cataractae,Rhinichthys,98.295,Rhinichthys umatilla,True,Rhinichthys,genus,referensi; lokasi,0,C,False,False
+PV369186,Rhinichthys cataractae,Rhinichthys,98.864,Rhinichthys umatilla,True,Rhinichthys,genus,referensi; lokasi,0,C,False,False
+PV446217,Etheostoma flabellare,Etheostoma,91.975,Etheostoma sagitta,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PV446224,Percina caprodes,Percina,99.398,Percina bimaculata,True,Percina,genus,referensi; lokasi,0,C,False,False
+PV446433,Etheostoma olmstedi,Etheostoma,100.0,Etheostoma nigrum,True,Etheostoma nigrum,spesies,,2,A,True,True
+PV624597,Notropis hudsonius,Notropis,95.455,Notropis leuciodus,False,Notropis,genus,referensi; lokasi,0,C,False,False
+PV624598,Notropis hudsonius,Notropis,95.954,Notropis chrosomus,False,Notropis,genus,referensi,0,C,False,False
+PV624616,Notropis hudsonius,Notropis,95.455,Notropis chrosomus,False,Notropis,genus,referensi,0,C,False,False
+PX740312,Dorosoma cepedianum,Dorosoma,95.429,Dorosoma petenense,False,Dorosoma,genus,referensi,0,C,False,False
+X95031,Amia calva,Amia,91.935,Acipenser medirostris,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False

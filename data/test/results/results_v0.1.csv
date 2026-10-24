@@ -1,0 +1,60 @@
+uji,referensi,aturan,metrik,nilai,target,catatan
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,n_spesies,119.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,n_kueri,252.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,ambang97_nama_keliru_lolos_pct,70.2,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,biotrace_nama_keliru_lolos_pct,6.0,< 16,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,biotrace_nama_keliru_nilai_A_pct,4.4,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,biotrace_nama_spesies_keliru_pct,6.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,biotrace_turun_genus_atau_tidak_dikenal_pct,94.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),penuh: validasi + tercatat,biotrace_tidak_dikenal_pct,17.5,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,n_spesies,119.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,n_kueri,252.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,ambang97_nama_keliru_lolos_pct,70.2,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,biotrace_nama_keliru_lolos_pct,26.6,< 16,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,biotrace_nama_keliru_nilai_A_pct,14.7,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,biotrace_nama_spesies_keliru_pct,26.6,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,biotrace_turun_genus_atau_tidak_dikenal_pct,73.4,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,kandidat Malili v0.1 (226 nama),logika: semua sekuens dianggap tervalidasi,biotrace_tidak_dikenal_pct,17.5,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,n_spesies,14.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,n_kueri,37.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,ambang97_nama_keliru_lolos_pct,35.1,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,biotrace_nama_keliru_lolos_pct,35.1,< 16,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,biotrace_nama_keliru_nilai_A_pct,29.7,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,biotrace_nama_spesies_keliru_pct,35.1,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,biotrace_turun_genus_atau_tidak_dikenal_pct,64.9,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oryzias",logika,biotrace_tidak_dikenal_pct,40.5,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,n_spesies,18.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,n_kueri,31.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,ambang97_nama_keliru_lolos_pct,61.3,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,biotrace_nama_keliru_lolos_pct,6.5,< 16,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,biotrace_nama_keliru_nilai_A_pct,0.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,biotrace_nama_spesies_keliru_pct,6.5,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,biotrace_turun_genus_atau_tidak_dikenal_pct,93.5,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Channa",logika,biotrace_tidak_dikenal_pct,9.7,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,n_spesies,11.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,n_kueri,25.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,ambang97_nama_keliru_lolos_pct,100.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,biotrace_nama_keliru_lolos_pct,48.0,< 16,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,biotrace_nama_keliru_nilai_A_pct,36.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,biotrace_nama_spesies_keliru_pct,48.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,biotrace_turun_genus_atau_tidak_dikenal_pct,52.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,"kandidat Malili v0.1, genus Oreochromis",logika,biotrace_tidak_dikenal_pct,0.0,,"amplikon MiFish dari kandidat Malili v0.1; L1 tanpa potongan kelengkapan; L2=1, L4=2 diasumsikan"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,n_spesies,1884.0,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,n_kueri,3499.0,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,ambang97_nama_keliru_lolos_pct,43.6,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,biotrace_nama_keliru_lolos_pct,26.0,< 16,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,biotrace_nama_keliru_nilai_A_pct,15.8,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,biotrace_nama_spesies_keliru_pct,26.0,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,biotrace_turun_genus_atau_tidak_dikenal_pct,74.0,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.1,I-MarFish LocalDB (8.370 urutan),logika,biotrace_tidak_dikenal_pct,43.5,,"I-MarFish LocalDB (DBP UNDIP, ikan laut), pembanding simulasi lama; tanpa info voucher"
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,n_spesies,107.0,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,n_kueri,333.0,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,ambang97_nama_keliru_lolos_pct,78.7,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,biotrace_nama_keliru_lolos_pct,8.1,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,biotrace_nama_keliru_nilai_A_pct,2.7,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,biotrace_nama_spesies_keliru_pct,8.1,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,biotrace_turun_genus_atau_tidak_dikenal_pct,91.9,>= 90,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",penuh: tercatat di wilayah uji,biotrace_tidak_dikenal_pct,14.4,,uji tanpa-satu-spesies pada referensi Kanada (jalur kedua)
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)","mesin penuh, mode uji",presisi_klaim_AB_vs_electrofishing_pct,,>= 90,tidak bisa dihitung: 0 klaim A-B karena tiap lokasi hanya 1 replikat (L4 = 0) dan tanpa kontrol
+6.2,"Kanada (mitohelper, spesies Lake St. Pierre + kerabat)","mesin penuh, mode uji",presisi_klaim_spesies_semua_nilai_vs_electrofishing_pct,32.9,,"57 dari 173 klaim tingkat spesies di sektor electrofishing; pelengkap, batas bawah"
+6.3,Li dkk. 2019,L4,tag_jump_fraction,0.001,disetel dari kontrol,tabel Li dkk. 2019 belum ada di repo; ditandai belum dikalibrasi

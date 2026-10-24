@@ -1,0 +1,53 @@
+{
+  "uji_tanpa_satu_spesies": {
+    "referensi": "Kanada (mitohelper, spesies Lake St. Pierre + kerabat)",
+    "aturan_biotrace": "penuh: tercatat di wilayah uji",
+    "n_spesies": 107,
+    "n_kueri": 333,
+    "ambang97_nama_keliru_lolos_pct": 78.7,
+    "biotrace_nama_keliru_lolos_pct": 8.1,
+    "biotrace_nama_keliru_nilai_A_pct": 2.7,
+    "biotrace_nama_spesies_keliru_pct": 8.1,
+    "biotrace_turun_genus_atau_tidak_dikenal_pct": 91.9,
+    "biotrace_tidak_dikenal_pct": 14.4
+  },
+  "proyek_deteksi": {
+    "klaim": 342,
+    "sebaran_nilai": {
+      "C": 111,
+      "D": 231
+    },
+    "sebaran_keputusan": {
+      "jangan dipakai": 231,
+      "dengan catatan": 111
+    },
+    "sebaran_tingkat": {
+      "spesies": 201,
+      "genus": 128,
+      "tidak dikenal": 13
+    },
+    "skor_L2": {
+      "0": 13,
+      "1": 329
+    },
+    "skor_L4": {
+      "0": 342
+    },
+    "deteksi_tanpa_amplikon_referensi": [
+      "PHEO"
+    ],
+    "informasi_hilang": [
+      "tag_jump_fraction belum dikalibrasi — ambang data nyasar memakai nilai usulan 0,001",
+      "mode uji dengan referensi luar (Lake St. Pierre) — hasil hanya untuk menguji logika mesin"
+    ]
+  },
+  "electrofishing": {
+    "klaim_AB_spesies_di_sektor_electrofishing": 0,
+    "cocok_electrofishing": 0,
+    "presisi_AB_pct": null,
+    "klaim_spesies_semua_nilai": 173,
+    "cocok_electrofishing_semua_nilai": 57,
+    "presisi_spesies_semua_nilai_pct": 32.9
+  },
+  "catatan": "Electrofishing juga melewatkan spesies; presisi terhadapnya adalah batas bawah. Ronde sampling dipakai sebagai replikat (1-2), jadi L4 maksimal 1; tabel tanpa kontrol negatif."
+}

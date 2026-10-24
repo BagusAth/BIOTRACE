@@ -1,0 +1,16 @@
+nama: ref12S-uji-LSP
+version: v0.1
+jenis: uji_luar
+wilayah: Lake St. Pierre
+danau:
+- Lac Saint-Pierre
+marker: 12S rRNA
+blast_db: ref12S
+aturan_validasi: tidak dicek (uji logika mesin)
+dibuat: '2026-10-24'
+berkas:
+  checklist_malili.csv: checklist_lsp.csv
+sumber:
+- mitohelper 12S Juli 2026
+- Astorg dkk. 2025 fish_codes.csv
+catatan: hanya untuk modul uji; tidak pernah dipakai menamai ikan Indonesia

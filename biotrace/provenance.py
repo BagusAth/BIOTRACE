@@ -15,6 +15,7 @@ from pathlib import Path
 import pandas as pd
 
 from . import APP_NAME, __version__
+from .config import ROOT, sha256_file
 
 
 def canonical_json(obj) -> str:
@@ -34,6 +35,9 @@ def build_manifest(project, reference=None, rules=None) -> dict:
         manifest["tabel_acuan"] = {k: f"sha256:{v}" for k, v in sorted(reference.files.items())}
     if rules is not None:
         manifest["aturan"] = rules.label
+        calib = rules.get("calibration", {}).get("error_by_grade_file")
+        if calib and (ROOT / calib).exists():
+            manifest["kalibrasi_galat"] = f"{calib} (sha256:{sha256_file(ROOT / calib)})"
     return manifest
 
 

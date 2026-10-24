@@ -1,0 +1,253 @@
+kueri,spesies_asli,genus_asli,kemiripan_tersisa,nama_teratas_tersisa,ambang97_memberi_nama,biotrace_nama,biotrace_tingkat,biotrace_penyebab,skor_L1,nilai,keliru,keliru_lolos_aman
+AB021885,Anguilla megastoma,Anguilla,98.817,Anguilla interioris,True,Anguilla,genus,referensi,0,C,False,False
+AB021886,Anguilla interioris,Anguilla,100.0,Anguilla marmorata,True,Anguilla marmorata,spesies,,1,B,True,True
+AB021887,Anguilla anguilla,Anguilla,100.0,Anguilla rostrata,True,Anguilla rostrata,spesies,,2,A,True,True
+AB021888,Anguilla japonica,Anguilla,98.817,Anguilla interioris,True,Anguilla,genus,referensi,0,C,False,False
+AB021889,Anguilla australis,Anguilla,98.193,Anguilla rostrata,True,Anguilla rostrata,spesies,,1,B,True,True
+AB021890,Anguilla marmorata,Anguilla,100.0,Anguilla interioris,True,Anguilla interioris,spesies,,1,B,True,True
+AB021892,Anguilla mossambica,Anguilla,93.976,Anguilla rostrata,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB021893,Anguilla bicolor,Anguilla,99.383,Anguilla pacifica,True,Anguilla pacifica,spesies,,1,B,True,True
+AB021894,Anguilla bicolor,Anguilla,100.0,Anguilla pacifica,True,Anguilla pacifica,spesies,,1,B,True,True
+AB021895,Anguilla malgumora,Anguilla,97.59,Anguilla australis,True,Anguilla,genus,referensi,0,C,False,False
+AB021897,Anguilla nebulosa,Anguilla,100.0,Anguilla bengalensis,True,Anguilla,genus,marker,0,C,False,False
+AB021898,Anguilla obscura,Anguilla,98.817,Anguilla interioris,True,Anguilla,genus,referensi,0,C,False,False
+AB021899,Anguilla dieffenbachii,Anguilla,98.817,Anguilla megastoma,True,Anguilla megastoma,spesies,,1,B,True,True
+AB021900,Anguilla reinhardtii,Anguilla,97.647,Anguilla japonica,True,Anguilla,genus,referensi,0,C,False,False
+AB021901,Anguilla rostrata,Anguilla,98.246,Anguilla japonica,True,Anguilla japonica,spesies,,1,B,True,True
+AB370891,Oryzias sarasinorum,Oryzias,95.808,Oryzias marmoratus,False,Oryzias,genus,referensi,0,C,False,False
+AB469437,Anguilla luzonensis,Anguilla,100.0,Anguilla malgumora,True,Anguilla malgumora,spesies,,2,A,True,True
+AB498064,Oryzias luzonensis,Oryzias,93.789,Oryzias curvinotus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB498065,Oryzias latipes,Oryzias,95.238,Oryzias sinensis,False,Oryzias,genus,referensi,0,C,False,False
+AB498066,Oryzias latipes,Oryzias,99.405,Oryzias sakaizumii,True,Oryzias sakaizumii,spesies,,2,A,True,True
+AB498067,Oryzias javanicus,Oryzias,80.588,Oryzias sp. CBM:ZF:16179,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB498068,Oryzias minutillus,Oryzias,88.199,Oryzias uwai,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB498069,Oryzias dancena,Oryzias,100.0,Oryzias melastigma,True,Oryzias melastigma,spesies,,2,A,True,True
+AB498070,Oryzias celebensis,Oryzias,88.272,Oryzias sarasinorum,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB898687,Poecilia reticulata,Poecilia,92.771,Poecilia picta,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AB968638,Channa marulius,Channa,95.266,Channa striata,False,Channa,genus,referensi,0,C,False,False
+AB969878,Oryzias latipes,Oryzias,95.238,Oryzias sinensis,False,Oryzias,genus,referensi,0,C,False,False
+AB972107,Channa argus,Channa,97.633,Channa maculata,True,Channa,genus,referensi,0,C,False,False
+AB974636,Glossogobius olivaceus,Glossogobius,99.405,Glossogobius circumspectus,True,Glossogobius circumspectus,spesies,,2,A,True,True
+AF265393,Glossogobius celebius,Glossogobius,98.246,Glossogobius illimis,True,Glossogobius illimis,spesies,,1,B,True,True
+AF266496,Anguilla rostrata,Anguilla,98.83,Anguilla japonica,True,Anguilla japonica,spesies,,1,B,True,True
+AF266498,Anguilla malgumora,Anguilla,100.0,Anguilla luzonensis,True,Anguilla luzonensis,spesies,,2,A,True,True
+AF266501,Anguilla mossambica,Anguilla,93.373,Anguilla rostrata,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AF266502,Anguilla bengalensis,Anguilla,100.0,Anguilla nebulosa,True,Anguilla,genus,marker,0,C,False,False
+AF454706,Anguilla anguilla,Anguilla,99.07,Anguilla malgumora,True,Anguilla,genus,referensi,0,C,False,False
+AP004421,Oryzias latipes,Oryzias,95.21,Oryzias sakaizumii,False,Oryzias,genus,referensi,0,C,False,False
+AP005981,Oryzias marmoratus,Oryzias,95.808,Oryzias sarasinorum,False,Oryzias,genus,referensi,0,C,False,False
+AP006772,Telmatherina celebensis,Telmatherina,83.537,Channa micropeltes,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AP006775,Dermogenys pusilla,Dermogenys,98.81,Dermogenys siamensis,True,Dermogenys siamensis,spesies,,1,B,True,True
+AP006832,Anabas testudineus,Anabas,100.0,Anabas cobojius,True,Anabas cobojius,spesies,,2,A,True,True
+AP007245,Anguilla labiata,Anguilla,100.0,Anguilla nebulosa,True,Anguilla,genus,marker,0,C,False,False
+AP008940,Oryzias latipes,Oryzias,98.81,Oryzias sakaizumii,True,Oryzias sakaizumii,spesies,,1,B,True,True
+AP008941,Oryzias latipes,Oryzias,100.0,Oryzias sakaizumii,True,Oryzias sakaizumii,spesies,,2,A,True,True
+AP008943,Oryzias latipes,Oryzias,98.214,Oryzias sakaizumii,True,Oryzias sakaizumii,spesies,,1,B,True,True
+AP008944,Oryzias latipes,Oryzias,95.238,Oryzias sakaizumii,False,Oryzias,genus,referensi,0,C,False,False
+AP008945,Oryzias latipes,Oryzias,94.578,Oryzias sinensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AP008946,Oryzias latipes,Oryzias,94.643,Oryzias sinensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+AP008947,Oryzias latipes,Oryzias,95.858,Oryzias sinensis,False,Oryzias,genus,referensi,0,C,False,False
+AP008948,Oryzias latipes,Oryzias,100.0,Oryzias sinensis,True,Oryzias sinensis,spesies,,2,A,True,True
+AP009047,Cyprinus carpio,Cyprinus,100.0,Cyprinus megalophthalmus,True,Cyprinus megalophthalmus,spesies,,2,A,True,True
+AP012021,Pterygoplichthys disjunctivus,Pterygoplichthys,100.0,Pterygoplichthys anisitsi,True,Pterygoplichthys,genus,marker,0,C,False,False
+AP017363,Cyprinus carpio,Cyprinus,98.844,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+AP017364,Cyprinus carpio,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+AY597335,Oreochromis mossambicus,Oreochromis,100.0,Oreochromis andersonii,True,Oreochromis,genus,marker,0,C,False,False
+EU709731,Oreochromis aureus,Oreochromis,100.0,Oreochromis niloticus,True,Oreochromis niloticus,spesies,,2,A,True,True
+EU917054,Anguilla luzonensis,Anguilla,99.412,Anguilla malgumora,True,Anguilla malgumora,spesies,,2,A,True,True
+GU013788,Oryzias sinensis,Oryzias,100.0,Oryzias latipes,True,Oryzias latipes,spesies,,2,A,True,True
+GU238433,Oreochromis niloticus,Oreochromis,100.0,Oreochromis mossambicus,True,Oreochromis mossambicus,spesies,,2,A,True,True
+GU370125,Oreochromis aureus,Oreochromis,98.675,Oreochromis niloticus,True,Oreochromis niloticus,spesies,,1,B,True,True
+GU370126,Oreochromis niloticus,Oreochromis,100.0,Oreochromis sp. KM-2006,True,Oreochromis,genus,marker,0,C,False,False
+GU477626,Oreochromis niloticus,Oreochromis,99.405,Oreochromis sp. KM-2006,True,Oreochromis,genus,referensi,0,C,False,False
+GU477627,Oreochromis niloticus,Oreochromis,100.0,Oreochromis aureus,True,Oreochromis aureus,spesies,,2,A,True,True
+GU937112,Channa argus,Channa,100.0,Channa maculata,True,Channa,genus,marker,0,C,False,False
+JQ713914,Oryzias melastigma,Oryzias,100.0,Oryzias dancena,True,Oryzias dancena,spesies,,2,A,True,True
+JX188254,Cyprinus carpio,Cyprinus,99.422,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+JX536695,Glossogobius circumspectus,Glossogobius,99.405,Glossogobius olivaceus,True,Glossogobius olivaceus,spesies,,2,A,True,True
+JX899749,Clarias gabonensis,Clarias,95.402,Clarias gariepinus,False,Clarias,genus,referensi,0,C,False,False
+JX978724,Channa maculata,Channa,100.0,Channa argus,True,Channa,genus,marker,0,C,False,False
+KC572134,Clarias batrachus,Clarias,96.0,Clarias leiacanthus,False,Clarias,genus,referensi,0,C,False,False
+KF128984,Mugilogobius abei,Mugilogobius,97.619,Mugilogobius sp. 'Izumi-Haze',True,Mugilogobius,genus,referensi,0,C,False,False
+KF188424,Clarias fuscus,Clarias,95.429,Clarias batrachus,False,Clarias,genus,referensi,0,C,False,False
+KF420268,Channa marulius,Channa,100.0,Channa argus,True,Channa,genus,marker,0,C,False,False
+KF879808,Vieja melanura,Vieja,100.0,Paraneetroplus synspilus x Amphilophus citrinellus,True,Paraneetroplus,genus,referensi,2,A,True,False
+KJ081546,Amphilophus citrinellus,Amphilophus,100.0,Amphilophus amarillo,True,Amphilophus,genus,marker,0,C,False,False
+KJ564254,Anguilla anguilla,Anguilla,99.415,Anguilla rostrata,True,Anguilla rostrata,spesies,,2,A,True,True
+KJ564268,Anguilla anguilla,Anguilla,99.415,Anguilla rostrata,True,Anguilla rostrata,spesies,,2,A,True,True
+KJ564271,Anguilla rostrata,Anguilla,100.0,Anguilla anguilla,True,Anguilla anguilla,spesies,,2,A,True,True
+KJ808811,Anabas testudineus,Anabas,94.675,Anabas cobojius,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KJ819540,Clarias fuscus,Clarias,96.0,Clarias leiacanthus,False,Clarias,genus,referensi,0,C,False,False
+KJ930190,Channa asiatica,Channa,97.041,Channa argus,True,Channa,genus,referensi,0,C,False,False
+KJ948424,Anguilla japonica,Anguilla,98.83,Anguilla anguilla,True,Anguilla,genus,referensi,0,C,False,False
+KJ993871,Piaractus brachypomus,Piaractus,100.0,Piaractus mesopotamicus,True,Serrasalmidae,famili,marker,0,C,False,False
+KM030466,Mugilogobius fontinalis,Mugilogobius,100.0,Mugilogobius sp. 'Izumi-Haze',True,Mugilogobius,genus,marker,0,C,False,False
+KM245046,Piaractus mesopotamicus,Piaractus,100.0,Piaractus brachypomus,True,Serrasalmidae,famili,marker,0,C,False,False
+KM282406,Cyprinus carpio,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+KM654981,Oreochromis esculentus,Oreochromis,97.619,Oreochromis tanganicae,True,Oreochromis,genus,referensi,0,C,False,False
+KM658973,Oreochromis variabilis,Oreochromis,97.024,Oreochromis malagarasi,True,Oreochromis,genus,referensi,0,C,False,False
+KP100265,Trichopodus trichopterus,Trichopodus,100.0,Trichopodus microlepis,True,Trichopodus,genus,marker,0,C,False,False
+KP144793,Mugilogobius chulae,Mugilogobius,88.623,Mugilogobius sp. 'tanuki-haze',False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KP188830,Colossoma macropomum,Colossoma,100.0,Piaractus brachypomus,True,Piaractus,genus,marker,0,C,True,False
+KP342379,Trichopodus microlepis,Trichopodus,100.0,Trichopodus trichopterus,True,Trichopodus,genus,marker,0,C,False,False
+KP699581,Trichopodus leerii,Trichopodus,100.0,Trichopodus trichopterus,True,Trichopodus,genus,marker,0,C,False,False
+KR029983,Trichopodus leerii,Trichopodus,,,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KR150876,Cichlasoma dimerus,Cichlasoma,97.059,Cichlasoma sp. USNM FISH 448078,True,Cichlasoma,genus,referensi,0,C,False,False
+KR869143,Cyprinus megalophthalmus,Cyprinus,100.0,Cyprinus carpio,True,Cyprinus carpio,spesies,,2,A,True,True
+KR869144,Cyprinus acutidorsalis,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+KR869145,Cyprinus multitaeniata,Cyprinus,99.338,Cyprinus carpio,True,Cyprinus,genus,referensi,0,C,False,False
+KT001082,Clarias gariepinus,Clarias,100.0,Clarias sp. NM-2010,True,Clarias,genus,marker,0,C,False,False
+KT166983,Poecilia formosa,Poecilia,100.0,Poecilia mexicana,True,Poecilia,genus,marker,0,C,False,False
+KT175511,Poecilia latipinna,Poecilia,100.0,Poecilia velifera,True,Poecilia velifera,spesies,,1,B,True,True
+KT175512,Poecilia mexicana,Poecilia,100.0,Poecilia formosa,True,Poecilia,genus,marker,0,C,False,False
+KT175514,Poecilia formosa,Poecilia,99.415,Poecilia mexicana,True,Poecilia,genus,referensi,0,C,False,False
+KT239004,Pterygoplichthys anisitsi,Pterygoplichthys,100.0,Pterygoplichthys disjunctivus,True,Pterygoplichthys,genus,marker,0,C,False,False
+KT239016,Pterygoplichthys pardalis,Pterygoplichthys,100.0,Pterygoplichthys disjunctivus,True,Pterygoplichthys,genus,marker,0,C,False,False
+KT358951,Channa lucius,Channa,98.81,Channa pulchra,True,Channa pulchra,spesies,,1,B,True,True
+KT809508,Clarias gariepinus,Clarias,100.0,Clarias sp. OCNFW10,True,Clarias,genus,referensi,1,B,False,False
+KU373073,Cyprinus multitaeniata,Cyprinus,94.798,Cyprinus carpio haematopterus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KU852423,Channa striata,Channa,94.675,Channa marulius,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KU852424,Channa micropeltes,Channa,97.647,Channa diplogramma,True,Channa,genus,referensi,0,C,False,False
+KX177965,Channa striata,Channa,95.266,Channa marulius,False,Channa,genus,referensi,0,C,False,False
+KX211966,Glossogobius giuris,Glossogobius,98.204,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,referensi,0,C,False,False
+KY315559,Amphilophus amarillo,Amphilophus,100.0,Amphilophus citrinellus,True,Amphilophus,genus,marker,0,C,False,False
+KY364884,Oryzias curvinotus,Oryzias,93.789,Oryzias luzonensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KY606169,Trichopodus pectoralis,Trichopodus,94.611,Trichopodus trichopterus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KY767672,Clarias batrachus,Clarias,94.857,Clarias fuscus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+KY798446,Anguilla australis,Anguilla,97.59,Anguilla rostrata,True,Anguilla,genus,referensi,0,C,False,False
+LC026151,Poecilia sphenops,Poecilia,99.412,Poecilia latipinna,True,Poecilia,genus,referensi,0,C,False,False
+LC036833,Clarias batrachus,Clarias,100.0,Clarias sp. NM-2010,True,Clarias,genus,marker,0,C,False,False
+LC036982,Channa punctata,Channa,90.588,Channa asiatica,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC049691,Trichopodus trichopterus,Trichopodus,97.605,Trichopodus microlepis,True,Trichopodus,genus,referensi,0,C,False,False
+LC049781,Glossogobius aureus,Glossogobius,97.059,Glossogobius giuris,True,Glossogobius,genus,referensi,0,C,False,False
+LC049784,Glossogobius giuris,Glossogobius,97.605,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,referensi,0,C,False,False
+LC049786,Glossogobius flavipinnis,Glossogobius,98.802,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,referensi,0,C,False,False
+LC069508,Oryzias latipes,Oryzias,95.152,Oryzias sinensis,False,Oryzias,genus,referensi,0,C,False,False
+LC069509,Oryzias latipes,Oryzias,95.181,Oryzias sinensis,False,Oryzias,genus,referensi,0,C,False,False
+LC069785,Glossogobius olivaceus,Glossogobius,98.81,Glossogobius circumspectus,True,Glossogobius circumspectus,spesies,,1,B,True,True
+LC091598,Pterygoplichthys gibbiceps,Pterygoplichthys,100.0,Pterygoplichthys sp. TEP-2017,True,Pterygoplichthys,genus,referensi,2,A,False,False
+LC146200,Poecilia reticulata,Poecilia,94.012,Poecilia picta,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC146326,Channa asiatica,Channa,96.45,Channa argus,False,Channa,genus,referensi,0,C,False,False
+LC193311,Oryzias sakaizumii,Oryzias,99.405,Oryzias latipes,True,Oryzias latipes,spesies,,2,A,True,True
+LC193339,Oryzias sakaizumii,Oryzias,99.405,Oryzias latipes,True,Oryzias latipes,spesies,,2,A,True,True
+LC277871,Oryzias woworae,Oryzias,92.814,Oryzias marmoratus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC278189,Oryzias sakaizumii,Oryzias,100.0,Oryzias latipes,True,Oryzias latipes,spesies,,2,A,True,True
+LC278213,Mugilogobius cavifrons,Mugilogobius,99.346,Mugilogobius parvus,True,Mugilogobius parvus,spesies,,2,A,True,True
+LC340286,Channa gachua,Channa,99.405,Channa cf. gachua CBM:ZF:15223,True,Channa,genus,referensi,0,C,False,False
+LC499126,Clarias batrachus,Clarias,95.429,Clarias fuscus,False,Clarias,genus,referensi,0,C,False,False
+LC499166,Dermogenys siamensis,Dermogenys,98.81,Dermogenys pusilla,True,Dermogenys pusilla,spesies,,1,B,True,True
+LC499167,Dermogenys collettei,Dermogenys,97.024,Dermogenys pusilla,True,Dermogenys,genus,referensi,0,C,False,False
+LC499425,Mugilogobius abei,Mugilogobius,97.024,Mugilogobius sp. 'Izumi-Haze',True,Mugilogobius,genus,referensi,0,C,False,False
+LC499492,Glossogobius aureus,Glossogobius,99.412,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,referensi,0,C,False,False
+LC499502,Glossogobius circumspectus,Glossogobius,87.879,Glossogobius olivaceus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC552549,Poecilia sphenops,Poecilia,100.0,Poecilia formosa,True,Poecilia,genus,marker,0,C,False,False
+LC579304,Glossogobius illimis,Glossogobius,98.246,Glossogobius celebius,True,Glossogobius celebius,spesies,,1,B,True,True
+LC698773,Oryzias sakaizumii,Oryzias,99.405,Oryzias latipes,True,Oryzias latipes,spesies,,2,A,True,True
+LC698776,Oryzias sakaizumii,Oryzias,99.405,Oryzias latipes,True,Oryzias latipes,spesies,,2,A,True,True
+LC743810,Oryzias latipes,Oryzias,94.643,Oryzias sinensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC744421,Oryzias latipes,Oryzias,94.578,Oryzias sinensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC769387,Mugilogobius abei,Mugilogobius,97.024,Mugilogobius sp. 'Izumi-Haze',True,Mugilogobius,genus,referensi,0,C,False,False
+LC780122,Oryzias latipes,Oryzias,94.643,Oryzias sinensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+LC852812,Glossogobius illimis,Glossogobius,97.661,Glossogobius celebius,True,Glossogobius,genus,referensi,0,C,False,False
+LC920412,Glossogobius bicirrhosus,Glossogobius,90.361,Glossogobius illimis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MF537252,Mugilogobius myxodermus,Mugilogobius,94.643,Mugilogobius abei,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MF804538,Channa lucius,Channa,91.176,Channa asiatica,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MF924390,Channa gachua,Channa,100.0,Channa cf. gachua CBM:ZF:15223,True,Channa,genus,marker,0,C,False,False
+MG603674,Oreochromis andersonii,Oreochromis,100.0,Oreochromis mossambicus,True,Oreochromis,genus,marker,0,C,False,False
+MG603675,Oreochromis macrochir,Oreochromis,100.0,Oreochromis mossambicus,True,Oreochromis,genus,marker,0,C,False,False
+MG644387,Clarias dussumieri,Clarias,95.105,Clarias leiacanthus,False,Clarias,genus,referensi,0,C,False,False
+MG986721,Channa diplogramma,Channa,97.647,Channa micropeltes,True,Channa,genus,referensi,0,C,False,False
+MK951678,Oreochromis tanganicae,Oreochromis,98.214,Oreochromis malagarasi,True,Oreochromis malagarasi,spesies,,1,B,True,True
+MN255575,Clarias theodorae,Clarias,94.253,Clarias gabonensis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MN255617,Oreochromis malagarasi,Oreochromis,99.405,Oreochromis tanganicae,True,Oreochromis tanganicae,spesies,,2,A,True,True
+MN255619,Oreochromis tanganicae,Oreochromis,99.405,Oreochromis malagarasi,True,Oreochromis malagarasi,spesies,,1,B,True,True
+MN718675,Cyprinus pellegrini,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+MN832874,Oryzias uwai,Oryzias,88.199,Oryzias minutillus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MN844123,Anguilla anguilla,Anguilla,100.0,Anguilla rostrata,True,Anguilla rostrata,spesies,,1,B,True,True
+MT080709,Pterygoplichthys pardalis,Pterygoplichthys,100.0,Pterygoplichthys disjunctivus,True,Pterygoplichthys,genus,marker,0,C,False,False
+MT109097,Clarias macrocephalus,Clarias,95.429,Clarias leiacanthus,False,Clarias,genus,referensi,0,C,False,False
+MT656123,Amphilophus labiatus,Amphilophus,100.0,Amphilophus citrinellus,True,Amphilophus,genus,marker,0,C,False,False
+MW393214,Oryzias javanicus,Oryzias,80.0,Oryzias sp. CBM:ZF:16179,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MW393273,Oryzias javanicus,Oryzias,80.0,Oryzias sp. CBM:ZF:16179,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MW393513,Oryzias javanicus,Oryzias,80.588,Oryzias sp. CBM:ZF:16179,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MW652797,Cyprinus carpio,Cyprinus,99.422,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+MW969691,Cyprinus rubrofuscus,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+MZ598440,Oreochromis mossambicus,Oreochromis,100.0,Oreochromis niloticus,True,Oreochromis niloticus,spesies,,2,A,True,True
+MZ605453,Channa gachua,Channa,97.619,Channa cf. gachua CBM:ZF:15223,True,Channa,genus,referensi,0,C,False,False
+MZ605454,Channa striata,Channa,95.266,Channa marulius,False,Channa,genus,referensi,0,C,False,False
+MZ605457,Dermogenys pusilla,Dermogenys,89.881,Dermogenys collettei,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+MZ605461,Glossogobius flavipinnis,Glossogobius,100.0,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,marker,0,C,False,False
+MZ605462,Glossogobius giuris,Glossogobius,100.0,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,marker,0,C,False,False
+MZ605487,Trichopodus trichopterus,Trichopodus,99.408,Trichopodus microlepis,True,Trichopodus,genus,referensi,0,C,False,False
+MZ605514,Anguilla marmorata,Anguilla,99.408,Anguilla interioris,True,Anguilla interioris,spesies,,1,B,True,True
+MZ827011,Anguilla rostrata,Anguilla,98.995,Anguilla japonica,True,Anguilla japonica,spesies,,1,B,True,True
+MZ827012,Anguilla rostrata,Anguilla,98.5,Anguilla japonica,True,Anguilla,genus,referensi,0,C,False,False
+NC_066826,Poecilia parae,Poecilia,94.083,Poecilia sp. USNM FISH 464015,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+NC_070106,Oreochromis grahami,Oreochromis,97.619,Oreochromis niloticus,True,Oreochromis,genus,referensi,0,C,False,False
+NC_071774,Clarias camerunensis,Clarias,95.402,Clarias gabonensis,False,Clarias,genus,referensi,0,C,False,False
+NC_071893,Channa pulchra,Channa,98.81,Channa lucius,True,Channa lucius,spesies,,1,B,True,True
+NC_071894,Channa ornatipinnis,Channa,97.619,Channa lucius,True,Channa,genus,referensi,0,C,False,False
+NC_071938,Channa andrao,Channa,95.833,Channa aurantimaculata,False,Channa,genus,referensi,0,C,False,False
+NC_071939,Channa stewartii,Channa,97.619,Channa burmanica,True,Channa,genus,referensi,0,C,False,False
+NC_072609,Channa burmanica,Channa,97.619,Channa sp. CBM:ZF:15595,True,Channa,genus,referensi,0,C,False,False
+NC_072726,Channa aurantimaculata,Channa,97.041,Channa sp. CBM:ZF:15595,True,Channa,genus,referensi,0,C,False,False
+NC_082225,Channa bleheri,Channa,95.238,Channa aurantimaculata,False,Channa,genus,referensi,0,C,False,False
+NC_086722,Clarias meladerma,Clarias,97.802,Clarias leiacanthus,True,Clarias,genus,referensi,0,C,False,False
+OK576411,Poecilia velifera,Poecilia,100.0,Poecilia latipinna,True,Poecilia latipinna,spesies,,1,B,True,True
+OP404805,Poecilia latipinna,Poecilia,100.0,Poecilia velifera,True,Poecilia,genus,marker,0,C,False,False
+OQ681454,Glossogobius olivaceus,Glossogobius,99.454,Glossogobius circumspectus,True,Glossogobius circumspectus,spesies,,2,A,True,True
+OQ681458,Amphilophus citrinellus,Amphilophus,99.448,Amphilophus amarillo,True,Amphilophus,genus,referensi,0,C,False,False
+OQ681459,Amphilophus citrinellus,Amphilophus,99.444,Amphilophus amarillo,True,Amphilophus,genus,referensi,0,C,False,False
+OQ681466,Channa limbata,Channa,100.0,Channa gachua,True,Channa,genus,marker,0,C,False,False
+OQ681467,Channa argus,Channa,97.826,Channa maculata,True,Channa,genus,referensi,0,C,False,False
+OQ681472,Oreochromis niloticus,Oreochromis,100.0,Oreochromis sp. KM-2006,True,Oreochromis,genus,marker,0,C,False,False
+OQ681474,Cyprinus carpio,Cyprinus,100.0,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,marker,0,C,False,False
+OQ681481,Glossogobius olivaceus,Glossogobius,98.907,Glossogobius circumspectus,True,Glossogobius circumspectus,spesies,,1,B,True,True
+OQ681485,Anabas testudineus,Anabas,95.109,Anabas cobojius,False,Anabas,genus,referensi,0,C,False,False
+OQ681486,Poecilia reticulata,Poecilia,92.982,Poecilia picta,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+OQ681487,Oreochromis niloticus,Oreochromis,100.0,Oreochromis mossambicus,True,Oreochromis mossambicus,spesies,,2,A,True,True
+OQ681489,Channa striata,Channa,95.652,Channa marulius,False,Channa,genus,referensi,0,C,False,False
+OQ681491,Oreochromis aureus,Oreochromis,100.0,Oreochromis niloticus,True,Oreochromis niloticus,spesies,,2,A,True,True
+OQ681495,Mugilogobius myxodermus,Mugilogobius,95.531,Mugilogobius abei,False,Mugilogobius,genus,referensi,0,C,False,False
+OQ681496,Mugilogobius myxodermus,Mugilogobius,95.556,Mugilogobius abei,False,Mugilogobius,genus,referensi,0,C,False,False
+OR036063,Poecilia sphenops,Poecilia,100.0,Poecilia caucana,True,Poecilia caucana,spesies,,2,A,True,True
+OR036071,Trichopodus pectoralis,Trichopodus,96.667,Trichopodus microlepis,False,Trichopodus,genus,referensi,0,C,False,False
+OR379510,Anguilla rostrata,Anguilla,98.817,Anguilla bicolor,True,Anguilla,genus,referensi,0,C,False,False
+OR379759,Channa argus,Channa,97.041,Channa maculata,True,Channa,genus,referensi,0,C,False,False
+OR737856,Oreochromis niloticus,Oreochromis,99.145,Oreochromis sp. KM-2006,True,Oreochromis,genus,referensi,0,C,False,False
+PP073961,Anabas cobojius,Anabas,100.0,Anabas testudineus,True,Anabas testudineus,spesies,,2,A,True,True
+PP118434,Cyprinus carpio,Cyprinus,98.235,Cyprinus sp. CBM ZF 11624,True,Cyprinus,genus,referensi,0,C,False,False
+PP118447,Oreochromis niloticus,Oreochromis,99.405,Oreochromis aureus,True,Oreochromis aureus,spesies,,2,A,True,True
+PP118448,Oreochromis mossambicus,Oreochromis,100.0,Oreochromis sp. 'red tilapia',True,Oreochromis,genus,marker,0,C,False,False
+PP471883,Trichopodus pectoralis,Trichopodus,94.156,Trichopodus trichopterus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PP477093,Anabas testudineus,Anabas,94.483,Anabas cobojius,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PP477094,Oreochromis niloticus,Oreochromis,100.0,Oreochromis aureus,True,Oreochromis aureus,spesies,,2,A,True,True
+PP479852,Trichopodus pectoralis,Trichopodus,94.118,Trichopodus trichopterus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PP481379,Glossogobius aureus,Glossogobius,99.359,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,referensi,0,C,False,False
+PP481381,Glossogobius giuris,Glossogobius,97.279,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,referensi,0,C,False,False
+PP515696,Glossogobius bicirrhosus,Glossogobius,90.116,Glossogobius illimis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PP524684,Clarias fuscus,Clarias,100.0,Clarias sp. NM-2010,True,Clarias,genus,marker,0,C,False,False
+PP531224,Anguilla marmorata,Anguilla,100.0,Anguilla interioris,True,Anguilla interioris,spesies,,1,B,True,True
+PP531225,Anguilla luzonensis,Anguilla,100.0,Anguilla malgumora,True,Anguilla malgumora,spesies,,2,A,True,True
+PP531226,Glossogobius illimis,Glossogobius,97.765,Glossogobius celebius,True,Glossogobius,genus,referensi,0,C,False,False
+PP531227,Glossogobius illimis,Glossogobius,98.324,Glossogobius celebius,True,Glossogobius celebius,spesies,,1,B,True,True
+PP536563,Channa striata,Channa,95.322,Channa marulius,False,Channa,genus,referensi,0,C,False,False
+PP574380,Trichopodus trichopterus,Trichopodus,98.889,Trichopodus microlepis,True,Trichopodus,genus,referensi,0,C,False,False
+PP576112,Glossogobius illimis,Glossogobius,97.126,Glossogobius celebius,True,Glossogobius,genus,referensi,0,C,False,False
+PP576113,Poecilia mexicana,Poecilia,98.276,Poecilia formosa,True,Poecilia,genus,referensi,0,C,False,False
+PP576116,Anguilla marmorata,Anguilla,100.0,Anguilla interioris,True,Anguilla interioris,spesies,,1,B,True,True
+PP588092,Poecilia reticulata,Poecilia,92.697,Poecilia picta,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PP911626,Glossogobius callidus,Glossogobius,93.529,Glossogobius flavipinnis,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PP911628,Clarias gariepinus,Clarias,99.425,Clarias sp. OCNFW10,True,Clarias,genus,referensi,1,B,False,False
+PQ268658,Anguilla bengalensis,Anguilla,100.0,Anguilla nebulosa,True,Anguilla,genus,marker,0,C,False,False
+PQ268683,Clarias gariepinus,Clarias,98.276,Clarias sp. OCNFW10,True,Clarias,genus,referensi,1,B,False,False
+PQ268687,Clarias gariepinus,Clarias,98.851,Clarias sp. OCNFW10,True,Clarias,genus,referensi,1,B,False,False
+PQ268689,Clarias theodorae,Clarias,95.977,Clarias leiacanthus,False,Clarias,genus,referensi,0,C,False,False
+PQ268749,Glossogobius giuris,Glossogobius,97.059,Glossogobius aureus,True,Glossogobius,genus,referensi,0,C,False,False
+PQ268795,Oreochromis urolepis,Oreochromis,99.408,Oreochromis sp. 'red tilapia',True,Oreochromis,genus,referensi,0,C,False,False
+PQ268802,Oreochromis urolepis,Oreochromis,100.0,Oreochromis sp. 'red tilapia',True,Oreochromis,genus,marker,0,C,False,False
+PV599428,Anguilla pacifica,Anguilla,100.0,Anguilla bicolor,True,Anguilla bicolor,spesies,,1,B,True,True
+PV599461,Channa striata,Channa,95.062,Channa marulius,False,Channa,genus,referensi,0,C,False,False
+PV599508,Glossogobius aureus,Glossogobius,100.0,Glossogobius sp. KAUM:I:117597,True,Glossogobius,genus,marker,0,C,False,False
+PV599509,Glossogobius circumspectus,Glossogobius,87.342,Glossogobius olivaceus,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
+PV599550,Mugilogobius chulae,Mugilogobius,,,False,tidak dikenal,tidak dikenal,referensi,0,-,False,False
