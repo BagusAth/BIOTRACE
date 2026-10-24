@@ -1,0 +1,5 @@
+asv_id,taxon,rank,pct_identity,runner_up_taxon,runner_up_pct_identity,reference_db
+asv01,Oreochromis niloticus,species,100.0,Oreochromis aureus,97.6,NCBI nt
+asv02,Telmatherina celebensis,species,97.1,Marosatherina ladigesi,91.0,NCBI nt
+asv03,Channa striata,species,99.4,Channa limbata,95.2,NCBI nt
+asv04,Oryzias,genus,92.0,,,NCBI nt

@@ -1,0 +1,8 @@
+samp_name,station,decimalLatitude,decimalLongitude,eventDate,samp_category,biological_rep,extraction_batch,target_gene,waterBody
+S1A,ST1,-2.4800,121.3500,2026-08-01,sample,1,B1,12S MiFish-U,Matano
+S1B,ST1,-2.4800,121.3500,2026-08-01,sample,2,B1,12S MiFish-U,Matano
+S1C,ST1,-2.4800,121.3500,2026-08-01,sample,3,B1,12S MiFish-U,Matano
+S2A,ST2,-2.5100,121.4200,2026-08-01,sample,1,B2,12S MiFish-U,Matano
+S2B,ST2,-2.5100,121.4200,2026-08-01,sample,2,B2,12S MiFish-U,Matano
+S2C,ST2,-2.5100,121.4200,2026-08-01,sample,3,B2,12S MiFish-U,Matano
+NEG1,NEG,,,2026-08-01,pcr_blank,1,B1,12S MiFish-U,Matano
